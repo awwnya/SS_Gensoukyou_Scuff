@@ -1,0 +1,210 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME FM,,,,,,
+,,,,,,
+# greetings,,,,,,
+greetingFMFriendly,OpenCommLink,"$faction.id == fantasy_manufacturing
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Welcome to the Fantasy Workshop!...There shouldn’t be any problem saying that, right?""
+OR
+""A future in which humanity lives in harmony with the mystery is on the horizon, and you and I are privileged to be among her first beneficiaries.""
+OR
+""Hi my friend, please allow me to introduce you to this..."" $personName start to settle on you for what looks like a fun retro shooting game.
+OR
+""Hello hello hello, this is $personName, what can I do for you?""",,
+greetingFMHostileWeaker,OpenCommLink,"$faction.id == fantasy_manufacturing
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""I’m running away this time, daze!, However, don’t you dare think about escaping the next time we meet" $personName isn’t as panicked as you might've thought after all. $personName seems prepared for this.
+OR
+""So you're the one behind this?"" With a sigh of frustration, $personRank cuts the link.
+OR
+""I won’t forget this!!""",cutCommLink:Cut off the communication.,
+greetingFMHostileWeakerDefiant,OpenCommLink,"$faction.id ==  fantasy_manufacturing
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""Even if the end result is full of pain no matter what, I will fight until the end!"" Seems like $personRank won’t go down without a fight.
+OR
+""Miracles only come for the brave!"" A resolute voice coming from $personName",cutCommLink:Cut off the communication.,
+greetingFMHostileStronger,OpenCommLink,"$faction.id == fantasy_manufacturing
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""Do you need us notifying your family of you death in advance?""
+OR
+""And it's game over"" A smug can be seen on $personRank.
+OR
+""Don’t be afraid, you will have a better life at Gensoukyou in the afterlife"" A sincere wish from $personName
+",cutCommLink:Cut off the communication.,
+greetingFMNeutral,OpenCommLink,"$faction.id == fantasy_manufacturing
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""What can I do for you, wise one?""
+OR
+""Don’t worry, we may sound like a giant corporation, but we’re not that big and fancy actually""$personName tries to explain, sensing a tense silence from your side.
+OR
+""Opening communication link...I see that you’re no ordinary individual""
+OR
+""Even in the Persean Realm, don’t let yourself bound by common sense.""",,
+#END greetings,,,,,,
+,,,,,,
+# factions,,,,,,
+relLevelNeutralFM,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == fantasy_manufacturing",FireAll RelLevelMoreDescription,"Like other factions, Gensoukyou Manufacturing thinks you have little to do with them and treats everything according to common sense.",,
+relLevelFavorableFM,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == fantasy_manufacturing",FireAll RelLevelMoreDescription,Gensoukyou Manufacturing thinks of you as a potential affiliate and hopes to deepen their relationship with you for you to receive relevant updates and also some free snacks along the way.,,
+relLevelWelcomingFM,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == fantasy_manufacturing",FireAll RelLevelMoreDescription,"Gensoukyou Manufacturing has recognized you as an important partner, as a result, you have gained access to the upper layers of their publicly available technology. Also, you have noticed a decreased frequency of them trying to give you strange things. All in all, a good thing.",,
+relLevelFriendlyFM,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == fantasy_manufacturing",FireAll RelLevelMoreDescription,"As a well-known partner within Gensoukyou Manufacturing, you are now given access to almost all their publicly available technology. During your collaboration, in addition to free snacks, you can also receive various intriguing souvenirs. Members of the community’s governing body occasionally invite you to their territories for tourism.",,
+relLevelCooperativeFM,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == fantasy_manufacturing",FireAll RelLevelMoreDescription,"The scholars of the council are happy to share their ideas and techonology with you even though you have expressed multiple times that you don’t really understand what they’re talking about in terms of principles and lectures. Regardless, everyone is pleased by your presence here.
+You now can easily access all their publicly-released technological products, better yet you are granted permission participate in some experimental projects.",,
+relLevelSuspiciousFM,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == fantasy_manufacturing",FireAll RelLevelMoreDescription,Gensoukyou Manufacturing has difficulties understanding you as your behaviour is making this fairly amiable(?) individuals uncomfortable. Regular cooperation has become somewhat challenging now.,,
+relLevelInhospitableFM,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == fantasy_manufacturing",FireAll RelLevelMoreDescription,"Your actions have caused slight disturbance, Gensoukyou Manufacturing calls you a bad Amanojyaku and will no longer send you anything, not even snacks! As for access to their technological products, the level of access you have is reduced to that of a pirate.",,
+relLevelHostileFM,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == fantasy_manufacturing",FireAll RelLevelMoreDescription,"It truly is a rare sight for a non-Luddic to receive such treatment. Gensoukyou Manufacturing believes that your behaviour has reached such an unpleasant level that inhabitants inside and outside the barriers are willing to split you in half. However, these individuals who lack any desire have no motivation to pursue you(?). So long as you stay outside their territories, you should be safe? (don’t even think of grazing...)",,
+relLevelVengefulFM,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == fantasy_manufacturing",FireAll RelLevelMoreDescription,"Although appeared as calm, your behaviour has very much pushed Gensoukyou Manufacturing to their last straw. So much so that their current method of handling has been archived as a typical case of “exercising maximum restraint”.
+To make it worse, all Gensoukyou Manufacturing products you previously obtained through official channels have become inexplicably ineffective. Even your stored snacks have been crushed and lost their crispiness.
+""I really don't think you're right for this mod, it's not so much a wild monster mod as a normal power fantasy mod, is it really necessary to pull the value to this level?""
+From Gap Youkai.""",,
+relLevelNeutralFM_CommissionedFM,RelLevelMoreDescription,"$faction.rel == NEUTRAL
+$faction.id == fantasy_manufacturing 
+$player.commissionFactionId == fantasy_manufacturing",,"It appears that both parties (mostly you) have overlooked the relationship currently between both sides. Fortunately though, it doesn’t seem to have caused any noticeable consequences...",,
+relLevelFavorableFM_CommissionedFM,RelLevelMoreDescription,"$faction.rel == FAVORABLE
+$faction.id == fantasy_manufacturing 
+$player.commissionFactionId == fantasy_manufacturing",,Gensoukyou Manufacturing suggests that you have a thorough look at the Captain’s Handbook they have sent you and kindly reminds you to get along with your non-human colleagues.,,
+relLevelWelcomingFM_CommissionedFM,RelLevelMoreDescription,"$faction.rel == WELCOMING
+$faction.id == fantasy_manufacturing 
+$player.commissionFactionId == fantasy_manufacturing",,"You can handle both non-human and human colleagues very well, and you’ve had fun interactions with even the most whimsical of youkai. Since Gensoukyou Manufacturing hasn’t faced any major threats, being a hired captain this way does sound nice.",,
+relLevelFriendlyFM_CommissionedFM,RelLevelMoreDescription,"$faction.rel == FRIENDLY
+$faction.id == fantasy_manufacturing 
+$player.commissionFactionId == fantasy_manufacturing",,"Despite being a hired captain , there are individuals in the surrounding fleets urging you to give up the mercenary life style and settle in {Hakurei}. More than that, you have gotten more involved into the fantastical aspects of Gensoukyou Manufacturing, Letting you engage in lively conversations even with those extraordinary beings bearing the title of great youkai.",,
+relLevelCooperativeFM_CommissionedFM,RelLevelMoreDescription,"$faction.rel == COOPERATIVE
+$faction.id == fantasy_manufacturing 
+$player.commissionFactionId == fantasy_manufacturing",,"You can call it a miracle for a hired captain such as yourself to have achieved such a high status that even within Gensoukyou Manufacturing, fleet members working with you have submitted a report to the higher-ups, with your name appearing prominently in plans for a large-scale exploration fleet.",,
+relLevelNeutralFM_Tokiko,RelLevelMoreDescription,"$faction.rel == NEUTRAL
+$faction.id == fantasy_manufacturing 
+FM_OfficerCheck FM_TokikoOfficerTag",,"""What about Gensoukyou’s attitude? Have you ever been interested in such matters before? Hmm… Currently, it seems to be the same as everyone else""
+—— ""Unnamed"" Tokiko",,
+relLevelFavorableFM_Tokiko,RelLevelMoreDescription,"$faction.rel == FAVORABLE
+$faction.id == fantasy_manufacturing 
+FM_OfficerCheck FM_TokikoOfficerTag",,"""It’s good that you want to work on your relationships… For me personally, I sometimes find the process quite challenging… Perhaps it’s because I often end up making things complicated for myself""
+—— ""Unnamed"" Tokiko",,
+relLevelWelcomingFM_Tokiko,RelLevelMoreDescription,"$faction.rel == WELCOMING
+$faction.id == fantasy_manufacturing 
+FM_OfficerCheck FM_TokikoOfficerTag",,"""I’m not sure if it’s the advanced technology or some wordly forces, but the power dynamics of a star system are much easier to understand compared to meeting someone face-to-face… Oh right, almost forgot, congratulations on entering a new level of collaboration, isn’t it nice? ""
+—— ""Unnamed"" Tokiko",,
+relLevelFriendlyFM_Tokiko,RelLevelMoreDescription,"$faction.rel == FRIENDLY
+$faction.id == fantasy_manufacturing 
+FM_OfficerCheck FM_TokikoOfficerTag",,"""Friendship? Can such word truly describe a relationship as tightly-woven as this?""
+—— ""Unnamed"" Tokiko",,
+relLevelCooperativeFM_Tokiko,RelLevelMoreDescription,"$faction.rel == COOPERATIVE
+$faction.id == fantasy_manufacturing 
+FM_OfficerCheck FM_TokikoOfficerTag",,"""What is the true meaning behind the concept of “collaboration”? Hmm? What I’m pondering about is the human-to-human aspect, such as your and mine, can this be considered as a form of “collaboration”? What do you think?""
+—— ""Unnamed"" Tokiko",,
+#END factions,,,,,,
+,,,,,,
+# commission,,,,,,
+CMSNTextRejectHostile_FM,CMSNTextRejectHostile,$faction.id == fantasy_manufacturing,,""Coming here in this situation and asking us that kind of question… I want to know whether or not you came to ridicule us…"",,
+CMSNTextHasOther_FM,CMSNTextHasOther,$faction.id == fantasy_manufacturing,,""Because you have already signed a hiring contract with $theOtherCommissionFaction, therefore we will have to reject your request to join. Have a good day."",,
+CMSNTextUnsuited_FM,CMSNTextUnsuited,$faction.id == fantasy_manufacturing,,""I'm very sorry we can't go through with your request, it will require a deeper understanding of you before we continue to do so..."",,
+CMSNTextSuitedPart1_FM,CMSNTextSuitedPart1,$faction.id == fantasy_manufacturing,,""Very well, all your credentials fits our requirements and we are in need of more people like you in order to create a harmonious future for both worlds.
+However, signing an employment agreement isn't just signing a paper, it means that you have full awareness of our philosophy of Gensoukyou Manufacturing and willing to dedicate yourself to upholding your beliefs.
+And although you can resign from your position at any time, doing so would be seen as abandoning your beliefs, which will have a negative impact on your future relationship with Gensoukyou Manufacturing."",,
+CMSNTextSuitedPart2_FM,CMSNTextSuitedPart2,$faction.id == fantasy_manufacturing,,""It seems that your conviction is strong enough. Then if you’re satisfied, please sign on this document."",,
+CMSNTextWelcomePart1_FM,CMSNTextWelcomePart1,$faction.id == fantasy_manufacturing,,""Welcome to Gensoukyou, Human.
+May wisdom guide you, and miracles accompany you on your journey. We shall be your most reliable support."",,
+CMSNTextWelcomePart2_FM,CMSNTextWelcomePart2,$faction.id == fantasy_manufacturing,,""May Gensoukyou be with you."",,
+CMSNTextChangeMind_FM,CMSNTextChangeMind,$faction.id == fantasy_manufacturing,,""I can see that not everyone has the same viewpoint as us,and there's no issue with having a change of heart, how else can I be of service then?"",,
+CMSNResignAskToConfirm_FM,CMSNResignAskToConfirm,$faction.id == fantasy_manufacturing,,""It seems that you’ve thought about this thoroughly… but are you sure you don’t want to give it more thought? This is about working for the future of both worlds."",,
+CMSNResignConfirmed_FM,CMSNResignConfirmed,$faction.id == fantasy_manufacturing,,""Alright, it's disappointing to know you have found something more fitting for you than upholding Gensoukyou’s philosophy.
+Nevertheless, You are now free to leave."",,
+CMSNResignCancelled_FM,CMSNResignCancelled,$faction.id == fantasy_manufacturing,,""A wise choice, I pray that the miracles will always work in your favour."",,
+#END commission,,,,,,
+,,,,,,
+# aiCores,,,,,,
+aiCores_turnInResponseFM,AICoresTurnedIn,$faction.id == fantasy_manufacturing,FireAll PopulateOptions,""Although the result is good, I still want to ask, shouldn’t people like you keep these Shikigami in the cargo for yourself?"",,
+aiCores_turnInOptionSelFM,DialogOptionSelected,"$option == aiCores_startTurnIn
+$faction.id == fantasy_manufacturing",FireAll PopulateCoresTurnInOptions,""Well, the researchers have always been bickering about whether these shiny cores can even be considered Shikigami,,, But since you are willing to provide us research materials, we will provide you the compensation you deserve."",,
+#END aiCores,,,,,,
+,,,,,,
+# TokikoEvent,,,,,,
+Tokiko_patherGreeting,PickGreeting,"$FM_Tokiko_isPather score:1000
+$FM_Tokiko_timer >= 15","ShowPersonVisual
+CallEvent $FM_Tokiko_eventRef prepare
+$talkedTo = true
+","The communication interface {$post} connects, showing person who looks indifferently at your arrival.
+
+""What brings you here, mercenary?""","0:Tokiko_patherText01_Op:""I heard that you've recently captured a prisoner so I want to strike a deal with you"",
+Tokiko_patherGreetingTalked,PickGreeting,"$FM_Tokiko_isPather score:1000
+$FM_Tokiko_timer >= 15
+$talkedTo","ShowPersonVisual
+CallEvent $FM_Tokiko_eventRef prepare
+",The Luddic Pather in the communication glares at you coldly.,"0:Tokiko_patherText03_Op:""Do you have a problem with it?"" 
+1:cutCommLink:Cut off the communication.",
+Tokiko_patherText01,DialogOptionSelected,$option == Tokiko_patherText01_Op,,"""This matter is non-negotiable. We only demand that the Gensoukyou release our comrades, and only then will we release that abomination.""
+
+The {$Rank} in front of the screen gives out a response without a second thought.","0:Tokiko_patherText02_Op:""Please give it some thought again, my noble friend. This ordinary fleet commander is nowhere near enough for the release of you comrades. Rather than doing that, they'd be more than willing to send a fleet to crush you.""",
+Tokiko_patherText02,DialogOptionSelected,$option == Tokiko_patherText02_Op,,"""Justice will never yield to violence, this blasphemous and inhuman being who desecrated the sacred land will forever be imprisoned, and I vow to guard this prison with my life even if I have to die!""
+
+The leader of the Luddic Path remains stubborn and unyielding.","0:Tokiko_patherText03_Op:""How many credits would it take for you to let her go then?""",
+Tokiko_patherText03,DialogOptionSelected,$option == Tokiko_patherText03_Op,"FireBest Tokiko_disableIfCanNotPayTrigger
+FireBest Tokiko_disableIfCanNotPaySpTrigger
+SetShortcut cutCommLink ""ESCAPE""
+SetStoryColor Tokiko_paySpsText01_Op","""I’ve said it before, neither bribery nor coercion will work on us, We will uphold justice until the end!""","0:Tokiko_rescueText01_Op:""We'll wait and see.""({$FM_Tokiko_MarinesRe} are required)
+1:Tokiko_paySpsText01_Op:""Well, $brotherOrSister {$personName}, it seems that you have failed the test of Ludd.""(A total of {$FM_Tokiko_spsRe} story points are required)
+2:cutCommLink:Cut off the communication.",
+Tokiko_disableIfCanNotPay,Tokiko_disableIfCanNotPayTrigger,!CallEvent $FM_Tokiko_eventRef canRescue,"SetEnabled Tokiko_rescueText01_Op false 
+SetTextHighlightColors bad 
+AddText ""You need {$FM_Tokiko_MarinesRe} Marine Corps for the rescue mission"" 
+SetTextHighlights $FM_Tokiko_playerMarines",,,
+Tokiko_disableIfCanNotPaySp,Tokiko_disableIfCanNotPaySpTrigger,!CallEvent $FM_Tokiko_eventRef canPaySp,SetEnabled Tokiko_paySpsText01_Op false ,,,
+Tokiko_rescueText01,DialogOptionSelected,$option == Tokiko_rescueText01_Op,ShowDefaultVisual ,"You close the communication interface and ordered all your electronic warfare and sensor officers to assemble.
+
+""We had already anticipated this, {$PlayerSirOrMadam}"" said the head of electronic warfare team. ""Although the Pathers’ low tech advantage has limited our intelligence gathering to a significant extent, time is still relative favourable for our side. During the negotiation, we were able to identify several areas mostly likely to contain the prisoners.""
+
+On the contrary, the sensor officer remains calm and cautious.
+
+He reminds you that while the general location of the prison could be determined, pinpointing the exact location of the prison to prepare for a rescue operation would require us deploying ships in low orbit for scannning ""Electronic warfare and jamming capabilities can be effective during the scanning phase, but I cannot guarantee that they can prevent the Luddic Path from firing upon us once the defense system is activated""",0:Tokiko_rescueText02_Op:The officers are preparing for low-orbit scan and attempting to formulate an conclusive plan.,
+Tokiko_rescueText02,DialogOptionSelected,$option == Tokiko_rescueText02_Op,,"Thanks to the lax and inept orbital defense of the Luddic Path, along with contributions from the electronic warfare team and the sensor officers, you successfully conducted the scan and even deployed some shuttles for closer surveillance.
+Using the valuable data, you and the Marine Corps swiftly finalized the operational plan.",0:Tokiko_rescueText03_Op:Organize troops to execute the plan,
+Tokiko_rescueText03,DialogOptionSelected,$option == Tokiko_rescueText03_Op,"ShowImageVisual bombard_saturation_result
+","You stand on the bridge, watching as the assault shuttles of various teams departed while you command the ships still in low-orbit to disperse any obstacles standing in the way. Everything is going according to plan. 
+
+And just within minutes of the operation, the first and most covert communication suppression team successfully cuts off the prison’s connections from other areas. Right on cue, the main force successfully lands under the support of your fleet’s suppression fire neutralizing several anti-air threats. Finally, the rescue shuttles carrying medical team and a small number of troops move towards the prison while the main force begins their assault inside the prison.
+
+Inside the prison, your troops march onward slowly while neutralizing traps set by the Luddic Path in an attempt delay the rescue. This does raise concerns about a potential counter-attack, but soon news of a young girl safely evacuating aboard the rescue shuttle dispels the thoughts away.",0:Tokiko_rescueDone_Op:Order your troops to retreat and prepare for a defensive suppression,
+Tokiko_rescueDone,DialogOptionSelected,$option == Tokiko_rescueDone_Op,"CallEvent $FM_Tokiko_eventRef Rescue
+ShowDefaultVisual 
+EndConversation","As expected, there were some minor inconveniences while the assault teams were returning as several anti-air units had been activated and fired upon your ships.
+Although no substantial casualties occurred until the end, your action still caused massive disruption during the evacuation of the returning forces. Taking advantage of the fact that anti-air hadn’t gone fully online, you quickly left the area.
+News of successful rescue operation without any casualties brought you relief and surprise.",,
+Tokiko_paySpsText01,DialogOptionSelected,$option == Tokiko_paySpsText01_Op,,"The Luddic Path extremist widens their eyes. Before $heOrShe could utter a word, you pre-emptively starts reciting:
+""Ludd created peace and willingly protect the non-believers from the hands of the faithful, giving them a chance for redemption. How noble they were!""
+
+""Yet you, who claims to be a subservient follower of Ludd, have been corrupted by demons, forsaking the path of a true Ludd!""
+
+Next, you solemnly clasp your hands together, assuming the standard prayer posture of Ludd: “Oh Ludd above，please show me how to save this wretched soul being controlled by demons! Can you free them from the abyss of violence, just as you have done before?""",0:Tokiko_paySpsText02_Op:Maintain you posture, dignified and sacred, as you wait response from the Pather,
+Tokiko_paySpsText02,DialogOptionSelected,$option == Tokiko_paySpsText02_Op,SetStoryColor Tokiko_paySpsDone_Op,"The Luddic Path extremist trembled.
+
+""Enlighten me, please!"" $heOrShe cried out in agony. ""Can you show this lost lamb the way back to the right path? Ludd above, this lamb has been deceived by demons for too long!""
+
+Your “pious” and “profound” words played the role of a Luddic priest to perfection, so perfect that your officers suspected you to be one of them but denies the possibility. The next step now is ""guiding"" this ""lamb"" to ""return to the righteous path"".
+
+You assume a wise and compassionate expression, explaining Ludd’s mercy and compassion. You told him that being a follower of Ludd, he should treat others kindly and offer forgiveness to sinners, just as Ludd did.","0:Tokiko_paySpsDone_Op:""Now, release the poor unfortunate soul who's being possessed by a demon to me, and accept {$FM_Tokiko_creditsRe} credits as repatriation instead. Being merciful master, I welcome you back to the hands of Ludd.""",
+Tokiko_paySpsDone,DialogOptionSelected,$option == Tokiko_paySpsDone_Op,"CallEvent $FM_Tokiko_eventRef paySpForRescue
+ShowDefaultVisual 
+EndConversation","Gratefully, the Luddic Path extremist closed the communication interface. Minutes later, you receive a request for a shuttle landing.
+Under the escort of several Luddic Pathers, a familiar figure of a winged girl disembarks from the shuttle. After the necessary handover process, you watch as the Luddic Path shuttle departs.",,
+,,,,,,
+# KutakaEvent,,,,,,
+FM_KutakaFirstTimeMeet_Greeting,PickGreeting,"$FM_KutakaFirstTimeMeet score:1000
+","ShowPersonVisual
+ShowSecondPerson FM_KutakaTest
+CallEvent $FM_Kutaka_eventRef prepare
+$talkedTo = true
+","emmmmm
+
+""ayaya？""","0:KutakaFirstTimeMeet_Greeting_Op:""测试ayaya""",
+FM_KutakaFirstTimeMeet_Done,DialogOptionSelected,$option == KutakaFirstTimeMeet_Greeting_Op,"CallEvent $FM_Kutaka_eventRef done
+ShowDefaultVisual 
+EndConversation",测试完成,,

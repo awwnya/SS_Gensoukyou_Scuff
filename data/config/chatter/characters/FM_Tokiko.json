@@ -1,0 +1,108 @@
+{
+	"name":"\"Unnamed\" Tokiko",
+	"personalities":["steady", "aggressive", "reckless"],
+	"gender":["f"],
+	"chance":0,
+	"talkativeness":1.75,
+	"categoryTags":["othermedia"],
+	
+	"lines":{
+		"start":[
+			{"text":"Engaging enemies in 5,4..."},
+			{"text":"Standard combat formation, enemy vessels closing in."},
+			{"text":"Your command?"},
+			{"text":"Updating data..."},
+			{"text":"Everyone please survive this time."},
+			{"text":"Just like the textbooks..."},
+			{"text":"Try not to make any mistakes we had in the simulation."},
+			{"text":"Current analysis results, inconclusive."},
+		],
+		"start_boss":[
+			{"text":"We can't be as reckless in this situation."},
+			{"text":"We need to be more serious this time..."},
+			{"text":"Although the simulations weren't optimistic, we must do our best."},
+			{"text":"Commander, please be extra careful!"},
+			{"text":"This is quite challenging."},
+			{"text":"Yes, this is quite tense, but..."},
+			{"text":"PLease come back alive, everyone."},
+			{"text":"I hope we don't have to see this as much next time."},
+		],
+		"retreat":[
+			{"text":"Is everyone coming back safely?"},
+			{"text":"Are you ok, Commander?"},
+			{"text":"The best choice for now."},
+			{"text":"It's okay, next time."},
+			{"text":"If you come back safely, there will be a reward for you, so hurry back, Commander!"},
+			{"text":"Time to retreat!"},
+		],
+		"out_of_missiles":[
+			{"text":"Missiles depleted, we might be in for a long battle.."},
+			{"text":"It's getting intense..."},
+		],
+		"engaged":[
+			{"text":"Target's entering' firing range."},
+			{"text":"This time, we won't go down easily like before..."},
+			{"text":"It's time to make good use of the knowledge we've learned."},
+			{"text":"Let me show you my fighting style!"},
+			{"text":"Don't judge me by appearances, I'm quite adept at this kind of combat."},
+		],
+		"need_help": [
+			{"text": "Support should be arriving soon, right?"},
+			{"text": "Commander, the situation here is urgent!"},
+			{"text": "Hang in there, everyone. I've requested reinforcements."},
+			{"text": "The situation in this area is critical, we need more assistance."},
+		],
+			"pursuing": [
+			{"text": ""Don't rush in too quickly"? Don't worry, Commander."},
+			{"text": "Yes, we are in an advantageous position for pursuit..."},
+			{"text": "We have the upper hand!"},
+			{"text": "Everyone is in good condition, let's continue the pursuit."},
+			{"text": "Engine power stable, we will initiate pursuit."},
+		],
+			"running": [
+			{"text": "Maiden maneuvering..."},
+			{"text": "It's alright, I'm quite agile in these matters."},
+			{"text": "Ah, Commander, please don't stare at me right now..."},
+			{"text": "Looks like the enemy has seized the opportunities."},
+		],
+			"hull_90": [
+			{"text": "Damage is still within manageable range, don't worry, Commander."},
+			{"text": "Everyone, be careful, the upcoming battles will be more intense."},
+			{"text": "Hmm, looks like we need to be more cautious..."},
+			{"text": "Damage control team should be on standby."},
+		],
+			"hull_50": [
+			{"text": "So far, we're still within the textbook scenarios."},
+			{"text": "Hold your positions, we still have a chance."},
+			{"text": "Which part was affected by that explosion just now?"},
+			{"text": "Analysis shows that our survival rate has significantly decreased, Commander."},
+			{"text": "I'm recalling some terrifying memories..."},
+		],
+			"hull_30": [
+			{"text": "Can we ensure the evacuation of the wounded?"},
+			{"text": "We can't hold on much longer, Commander..."},
+			{"text": "I'm trying my best."},
+			{"text": "Forget about analysis and data, the priority now is to ensure survival as much as possible."},
+			{"text": "Are we really helpless in the end?"},
+		],
+			"overload": [
+			{"text": "Energy system warning, is the damage control team in place?"},
+			{"text": "Damn it, I hate this situation the most..."},
+			{"text": "Everyone, brace for impact, we may face a round of high-intensity attacks."},
+			{"text": "It's definitely much stronger than what was shown in the simulations..."},
+		],
+		"death": [
+			{"text": "...Commander, I..."},
+			{"text": "...Everyone died..."},
+			{"text": "...Please don't leave me alone..."},
+		],
+			"victory": [
+			{"text": "The battle is over, next I will take care of the wounded."},
+			{"text": "Yes, Commander? You want a reward? Well..."},
+			{"text": "This time it ended smoothly."},
+			{"text": "Since Commander has worked hard, would you like to touch my wings?"},
+			{"text": "It's good that there aren't any major issues..."},
+			{"text": "In any case, it's over now."},
+		]
+	}
+}

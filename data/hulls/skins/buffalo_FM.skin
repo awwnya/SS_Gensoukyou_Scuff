@@ -1,0 +1,37 @@
+{
+  "baseHullId": "buffalo",
+  "baseValueMult": 1,
+  "builtInMods": [
+    "FantasyBasicMod"
+  ],
+  "descriptionId": "buffalo",
+  "descriptionPrefix": "这艘船由幻想工造进行了适应性改造，以应对日益复杂的星域环境",
+  "fighterBays": 0,
+  "fpMod": 0,
+  "hullDesignation": "货舰",
+  "hullName": "水牛 (FM)",
+  "manufacturer": "幻想工造",
+  "removeBuiltInMods": [
+    "degraded_engines"
+  ],
+  "systemId":"drone_pd_x2",
+  "restoreToBaseHull": false,
+  "skinHullId": "buffalo_FM",
+  "spriteName": "graphics/ships/skins/buffalo_FM.png",
+  "tech": "幻想计划",
+  "weaponSlotChanges": {
+    "WS 001": {
+      "type": "ENERGY"
+    }
+  },
+  	"engineSlotChanges":{
+		"0":{
+          	"style": "HIGH_TECH",
+		},
+		"1":{"style":"HIGH_TECH"},
+		"2":{"style":"HIGH_TECH"},
+		"3":{"style":"HIGH_TECH"},
+		"4":{"style":"HIGH_TECH"},
+		"5":{"style":"HIGH_TECH"},
+	},
+}

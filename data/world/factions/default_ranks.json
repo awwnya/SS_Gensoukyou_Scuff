@@ -1,0 +1,22 @@
+{
+	"ranks":{
+		"FM_factionLeader":{"name":"理事长"},
+		"FM_cadetGraduate":{"name":"海军少尉候补生"},
+		"FM_miko":{"name":"巫女"},
+		
+		
+	},
+	
+	"posts":{
+		"FM_factionLeader":{"name":"理事长"},
+		"FM_miko":{"name":"巫女"},
+		"FM_executiveAssistant":{"name":"行政助理"},
+	},
+}
+
+
+
+
+
+
+

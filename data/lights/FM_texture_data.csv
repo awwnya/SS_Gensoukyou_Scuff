@@ -1,0 +1,3 @@
+id,type,frame,magnitude,map,path
+FM_Loupgarou,ship,,,normal,graphics/shaders/normal/FM_Loupgarou_normal.png
+FM_Hearn,ship,,,normal,graphics/shaders/normal/FM_Hearn_normal.png

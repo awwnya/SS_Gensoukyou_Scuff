@@ -1,0 +1,580 @@
+{
+    "starSystems":{
+      "planet_name_hakurei":"Hakurei",
+      "planet_name_kirisame":"Kirisame",
+	    "planet_name_blazing_hell":"Blazing Hell",
+      "planet_name_crino":"Crino",
+	    "planet_name_inverted_castle":"Inverted Castle",
+
+      "jump_name_gensokyo_jump":"境界通道",
+
+      "entity_name_gensokyo_gate":"Gensokyo 之门",
+      "entity_name_gensokyo_relay":"境界中继站",
+      "entity_name_gensokyo_nav":"隙间导航信标",
+      "entity_name_gensokyo_sensor":"幻境检视仪",
+
+      "terrain_name_RoadOfReconsideration":"再思之道",
+    },
+
+    "hullMod":{
+      # Util
+      "FM_DescriptionAndEvaluation":"描述与评价",
+      "FM_Instruction":"说明",
+      "FM_HullModRequireBasicMod":"不能被安装没有幻想工造基础套件的舰船上",
+      "FM_HullModRequireShield":"不能安装在没有护盾的舰船上",
+      "FM_HullModRequireFighterBay":"需要机库",
+      "FM_HullModProblem":"插件冲突",
+      # Single HullMod
+      "FantasyAliceMod_DAE_0":"最初设计用来减少舰载机飞行员损失的基于远程控制和AI飞行管制的通用系统，但项目被砍后仅仅保存了对傀儡师级的内置。\n\n基于灵能的时流系统很大程度的提升了舰载机在接近航母时的战斗效率。但是与星域中常见的时流设备一样，对舰载机成员的精神伤害仍然存在。\n\n通过灵能设备让飞行员在航母内远程操作战机确实降低了战斗损失。但是据十分不可靠的小道消息，为了使用这套系统，飞行员的大脑将被半永久性的与舰船AI直接链接，导致[数据删除]。",
+      "FantasyAliceMod_DAE_1":"\"从很多方面来说，这是一个让大家都能幸福的方案\" \n\n —— Alice Margatroid [数据删除]",
+      "FantasyAliceMod_HL_2":"完全消除",
+
+      #"FantasyAmuletMod_HL_0":"个",
+      "FantasyAmuletMod_HL_1":"秒",
+      "FantasyAmuletMod_HL_2":"能量伤害",
+      "FantasyAmuletMod_PlayerTitle":"灵子容器被动影响",
+      "FantasyAmuletMod_PlayerData":"当前机动性与航速提升",
+      "FantasyAmulet_DAE_0":"这个简称为二色蝶的系统被认为是灵基框架迄今为止最为成功的扩展案例，她相当程度的展示了星域当下的尖端科技与人之领科技(或被好事者认为是魔法和灵力的技术)的区别。当然，和其他昔日的优雅技术一样，她也相当昂贵而复杂，且仅仅能与巫女适配。",
+      "FantasyAmulet_DAE_1":"\"对于梦与传统的守护者们，当下显然更需要些新方式来解决新问题。\" \n\n —— Ibaraki Kasen",
+
+      "FantasyBasicMod_Combat_0_T":"底力爆发",
+      "FantasyBasicMod_Combat_0_D":"剩余时间",
+      "FantasyBasicMod_Combat_1_T":"底力补充中...",
+      "FantasyBasicMod_Combat_1_D":"剩余时间",
+      "FantasyBasicMod_Combat_2_T":"弹幕侦测",
+      "FantasyBasicMod_Combat_2_D":"自机周边抛射物数量为",
+      "FantasyBasicMod_I_0":"该插件具备建立小型灵能网络的能力",
+      "FantasyBasicMod_I_1":"灵能场协调能够相当程度优化舰队护盾系统(伤害减少以及维持成本降低)并对所有舰船生效",
+      "FantasyBasicMod_I_2":"默认情况下，这将使每艘携带该插件的舰船提供 2% 的灵能场协调，而协调度最高为 25%",
+      "FantasyBasicMod_I_3":"基础的威胁感知系统能在来袭火力密度较高时发挥一定的作用，但不要过于相信她……",
+      "FantasyBasicMod_SP":"威胁感知系统相关",
+      "FantasyBasicMod_SP_0":"当来袭射弹数量高过{%s}时，舰船机动性与最大航速提升{%s}，持续{%s}秒",
+      "FantasyBasicMod_SP_1":"每次使用结束后会有{%s}秒的冷却时间",
+      "FantasyBasicMod_SP_2":"同时这一套奇怪的系统并不兼容星域中常见的安全超载，特此说明。",
+      "FantasyBasicMod_SP_3":"其作用范围为{%s/%s/%s/%s}",
+      "FantasyBasicMod_DAE_0":"作为早期未扩张的结界内外侧合作空间舰队研究的最初几个项目之一，基本套件在设计上带有强调火力持续性和密度以及忽视反装甲能力等典型的幻想特色，甚至还安装了似乎没什么用的威胁侦测系统。\n\n虽然加入了灵能协调网络这种便于集群作战的体系，仅仅安装基本套件的幻想工造舰船可能并不如想象中有特色。",
+      "FantasyBasicMod_DAE_1":"\"既不幻想，也不基础，更非套件\" \n\n —— Shameimaru Aya",
+      "FantasyBasicMod_DAE_2":"\"但我们的插件拥有着支持安装其他专精插件程度的能力！\" \n\n —— 科普读物 <妖精也能看懂的基础空间作战理论>",
+
+      "FantasyBorderMod_Combat_0_T":"隙间系统剩余使用次数",
+      "FantasyBorderMod_Combat_0_D":"当前为",
+      "FantasyBorderMod_Combat_1_T":"下一次充能需要",
+      "FantasyBorderMod_Combat_1_D":"伤害",
+      "FantasyBorderMod_I_0":"隙间系统将强制维持护盾开启并降低{%s}幅能水平，同时消除威胁侦测半径内的所有敌意投射物",
+      "FantasyBorderMod_DAE_0":"尽管幻想的居民们对空间战争的认识普遍不足，幻想工造仍然从结界里侧借鉴到了不少非凡的设计，比如这款插件，能在危险时自动启用将射弹传送至隙间并再也不见。\n\n只是即便到现在，外界的人们也并不大清楚所谓的\"隙间\"到底是某种异空间还是什么更古怪的物理学概念。",
+      "FantasyBorderMod_DAE_1":"\"你大可以把这东西当成自动BOMB来使用，只不过没有手动选项罢了\" \n\n —— 某个伟大的妖怪贤者",
+
+      "FantasyBulletMod_DAE_0":"幻想工造为了应对大型目标而研发的特种插件，采用结界科技改进过后的供弹供能系统将理论射速提升至了一个全新的层次。尽管付出了投射物飞行速度的代价，该项目仍被看做一次成功。",
+      "FantasyBulletMod_DAE_1":"\"说起来，战斗结束后超出射程的那些弹头都去哪里了？\" \n\n —— 一名刚刚击退了左径部队的幻想工造舰长",
+      
+      "FantasyKawausoModUnapplicable":"主力舰不可安装",
+      "FantasyKawausoMod_I_0":"会产生按一定距离环绕舰体的三个球形物，可称之为水獭",
+      "FantasyKawausoMod_I_1":"每只水獭都能将任何进入其身边{%s/%s/%s/%s}内的导弹和战机造成电弧打击，每{%s}发动一次",
+      "FantasyKawausoMod_I_2":"每个电弧都将造成{%s/%s/%s/%s}的能量伤害和{%s}的EMP，并产生{%s}伤害量的软幅能",
+      "FantasyKawausoMod_I_3":"安装在巡洋舰时将为所有中槽非导弹武器附加点防御能力",
+      "FantasyKawausoMod_DAE_0":"由于幻想工造整体对重型战机集群抗性较弱，来自结界内侧的工程师们设计出了这套诡异的点防御插件。\n\n在理想的状况下，该系统仅仅只需要产生一些软幅能便能轻松的无效化身边的战机与导弹，不过显而易见的是，当导弹和战机数量达到饱和时，巨量的软幅能将彻底压垮舰船能源系统。",
+      "FantasyKawausoMod_DAE_1":"\"我会给你一个你无法拒绝的条件。\" \n\n —— Kitcho Yachie",
+
+      "FantasyOptionsControlMod_SP":"当前负面效果",
+      "FantasyOptionsControlMod_SP_0":"所有舰载机作战半径减少为原先的",
+      "FantasyOptionsControlMod_DAE_0":"深入的贯彻与落实了舰载机与航母协同作战的的理念，为母舰安装强化过的灵能系统使其在战斗中对舰载机的常规武装进行强化，由于种种不可抗力导致舰载机的作战半径将受到一定限制。",
+      "FantasyOptionsControlMod_DAE_1":"\"众所周知，舰队战中最重要的就是火力，但怎么样才能为航母提供常规战斗舰船级别的火力呢？\" \n\n —— Kirisame Marisa",
+
+      "FantasyPlayerMod_Combat_0_T":"穿甲效果提升",
+      "FantasyPlayerMod_Combat_0_D":"当前穿甲效果提升为",
+      "FantasyPlayerMod_DAE_0":"利用大量高频冲击引发共振效应加大对于坚硬结构的摧毁效率，共振放大器可以在高幅能状态下激发活化并将弹体共振烈度与幅能水平进行同调，进而随幅能升高而线性提高穿甲力度。\n\n这一系列描述看起来十分简洁易懂，然而只要细心思考或者没事找事就能感觉到其中某些字眼的黑箱属性，不过比起这些细节，人们还是更好奇和关注其配合强力反装甲武器时的恐怖破坏力。",
+      "FantasyPlayerMod_DAE_1":"\"祗园精舍钟声响，述说世事本无常。\" \n\n —— 人之领古文献",
+
+      "FantasySageMod_DAE_0":"一种虽然正式名称是贤者但总是被戏称为城管核心的专精化火控组件。\n\n这种特殊定位核心被设计用于提升幻想工造舰队整体对于轻型舰船的压制能力，尽管在核心性能上不如目标定位系统，其在打击小股左径与海盗时的高效率仍然为其赢得了一席之地。",
+      "FantasySageMod_DAE_1":"\"不乖的孩子接下来会变得很痛哦？\" \n\n —— Konpaku Youmu，于一次在外界的战斗中",
+
+      "FantasyTraditionalMod_SpecialRequire":"仅可安装在驱逐舰或护卫舰上",
+      "FantasyTraditionalMod_RangeInstruction":"射程修正说明",
+      "FantasyTraditionalMod_RangeInstruction_0":"其为小型单位的远程作战提供了相对而言十分恐怖的射程加成",
+      "FantasyTraditionalMod_RangeInstruction_1":"该组件使得舰船能量武器(包括光束)的射程得到了直接性的增加，护卫舰为{%s}单位，驱逐舰为{%s}单位",
+      "FantasyTraditionalMod_RangeInstruction_2":"需要注意的是，安装本插件后，对于射程高于{%s}单位的武器，超出的部分将会乘以{%s}倍",
+      "FantasyTraditionalMod_SP":"限制与其他功能说明",
+      "FantasyTraditionalMod_SP_0":"来自异界的特殊通用型射程控制系统无法兼容专为光束武器设计的高级光学插件",
+      "FantasyTraditionalMod_SP_1":"为了换取更强大的能量武器适应性，对幻想工造本身的滞留弹幕插件也无法兼容",
+      "FantasyTraditionalMod_SP_2":"作为一种标志，安装了本插件的舰船引擎尾焰颜色将发生一定的改变",
+      "FantasyTraditionalMod_DAE_0":"一种对小型舰船的极端化升级，是来自另一个世界的智慧。\n\n由结界里侧的某些放浪形骸的人士观察卢德左径有感后协助开发而成。\n\n因使用方式十分容易理解而广受好评。",
+      "FantasyTraditionalMod_DAE_1":"\"遵循古老的{SC}规则常识，我们的建议是飘在远处然后除了瞄准与开火以外什么都别管\" \n\n —— Kochiya Sanae",
+      "FantasyTraditionalMod_HL_3":"能量",
+
+      # FantasySpellMod
+      "FantasySpellMod_StatusBarString":"灵子容器",
+      "FantasySpellMod_Des":"灵子容器",
+      "FantasySpellMod_DAE_0":"这是种糅合了人之领时代的尖端科学技术与结界里侧那看似荒诞的玄学经验而成的修正型灵能网络系统。尽管本身无法为舰船提供任何战斗性能上的改变且造价高昂结构复杂，但其所映射的宏伟的设想仍然吸引到了幻想工造足够的关注。不过正如其他处于试验阶段的项目一样，她的未来仍然充满着不确定",
+      "FantasySpellMod_DAE_1":"\"究竟是先进的技术会看起来像是魔法，还是魔法本身就是某种先进的技术呢?\" \n\n —— Matara Okina",
+
+      # FantasyRumiaMod
+      "FantasyRumiaMod_DAE_0":"使舰船在相位空间和正常空间中一定程度自由转换的技术一直以来都是都市传说和玄学故事的重灾区，显然这个能将舰船周围空间和物质一起隐没入相位空间的奇怪技术也是如此。\n\n不过这里有一个小知识，\"妖魔夜行\"的名字实际上是源于左径分子与海盗对这一型舰船战斗表现的感受。",
+      "FantasyRumiaMod_DAE_1":"\"为了防止撞到什么奇怪的东西，你需要有良好的直觉。毕竟你知道的，除了幅能系统的告警声，我们所感觉到的只有一片漆黑。\" \n\n —— 纪实文学 <从阴影中降临>",
+
+      # FantasyMirrorProtocolMod
+      "FantasyMirrorProtocolMod_Info_Title":"镜流协议",
+      "FantasyMirrorProtocolMod_Info_Data":"当前最高航速提升",
+      "FantasyMirrorProtocolMod_I_0":"系统能量在所有情况下均会衰减，默认情况下从充满到归零需要{%s}时间。",
+      "FantasyMirrorProtocolMod_I_1":"系统每次受到光束伤害时进行充能，单次充能量随光束伤害占舰船耗散比例增加而增加，对于伤害较低的光束，充能速率将相当缓慢甚至无法充能。",
+      "FantasyMirrorProtocolMod_DAE_0":"烦躁的研究者们对于那些抱怨小型舰船很容易被各种光束武器或是{DEM}直接打穿的舰长们的报复。该插件如恒星护盾一般将舰体表面与护盾发生器共同调整，用复杂的灵能回路和能量转换系统将光束能量尽力导流至引擎系统，强行增加机动性能与航速。",
+      "FantasyMirrorProtocolMod_DAE_1":"\"必中的弹幕是不应该存在于弹幕游戏中的。\" \n\n —— 科普读物 <弹幕游戏，从入门到精通>",
+
+    },
+
+    "shipSystem":{
+      "FM_BorderControlInfo":"折跃舰载机至目标旁(轰炸机以外)",
+      "FM_ByakurenSystemInfo":"暂时提升引擎出力冲刺，同时提高质量",
+      "FM_CrossBorderInfo":"传送",
+      "FM_CursedPd_FloatText":"PD 系统故障!",
+      "FM_CursedPd_Target":"% PD射程减少",
+      "FM_CursedPd_Player":"% 目标PD武器射程减少",
+      "FM_EastWindInfo0":"偏转来袭非导弹弹幕",
+      "FM_EastWindInfo1":"释放弹幕",
+      "FM_EndLessGallery":"将一定半径内的敌舰传送到远离本舰的位置",
+      "FM_GazeOfSpectre_FloatText":"舰船机动性降低",
+      "FM_GazeOfSpectre_Target":"% 机动性与航速减少",
+      "FM_GazeOfSpectre_Player":"% 目标机动性减少",
+      "FM_MisfortuneAbsorbInfo0":"降低友军所受伤害降低",
+      "FM_MisfortuneAbsorbInfo1":"自机所受伤害提升",
+      "FM_PounceDriveInfo":"短时大幅提高机动性和航速",
+      "FM_ReactoreExcursionInfo0":"能量武器伤害提升",
+      "FM_ReactoreExcursionInfo1":"起始时武器罢工几率为",
+      "FM_ReisenSystem_FloatText":"后方警告",
+
+      "FM_SurprisingStrikeInfo1":"战机导弹伤害提升",
+      "FM_SurprisingStrikeInfo2":"战机机动性提升",
+      "FM_SurprisingStrikeInfo3":"战机非导弹武器伤害下降",
+
+
+      "FM_SwordOutInfo0":"武器射程 -",
+      #"FM_SwordOutInfo1":"装甲和护盾所受伤害降低到",
+      "FM_SwordOutInfo2":"武器射速提升至",
+      "FM_SwordOutInfo3":"武器幅能 -",
+
+      "FM_WindGodDriveInfo":"提升引擎出力，进入相位状态向前突进",
+      "FM_BlazingStarInfo":"在速度方向得到一次加速和转向能力提升",
+
+      "FM_PhaseRumiaInfo0":"时间流速加快",
+      "FM_PhaseRumiaTitle1":"相位稳定",
+      "FM_PhaseRumiaInfo1":"最高航速不变",
+      "FM_PhaseRumiaTitle2":"相位扰动",
+      "FM_PhaseRumiaInfo2":"最高航速降低至",
+
+      "FM_FluxBurnInfo0":"敌方舰载机最高航速降低",
+      "FM_FluxBurnInfo1":"护盾下软硬幅能耗散倍率变为",
+      
+
+    
+    },
+
+    "misc":{
+      "FM_SpellFieldEffect_T":"灵能场协调",
+      "FM_SpellFieldEffect_D":"当前我方舰队护盾维持与护盾所受伤害为",
+
+      "FM_CaptureWeb_T":"疫病标记",
+      "FM_CaptureWeb_D":"装甲所受伤害提升",
+
+      "FM_addRating":"评价点数增加了 %s ，你当前有 %s 评价点数，累积获得了 %s 评价点数.",      
+      "FM_RelRise":"关系提高",
+      "FM_RelDec":"关系下降",
+      "FM_Id":"fantasy_manufacturing",
+    },
+
+    "ungp":{
+      "FM_FateOfSixtyYears_Desc":"彼岸花开"
+    },
+
+    "event":{
+
+      # Util
+      "FM_Button_Accept":"接受",
+      "FM_addDays_After":"已经过",
+      "FM_addDays_Remain":"剩余",
+
+      #Reimu Event
+      "FM_ReimuBarEvent_BarScene":"一位衣着华丽的少女正在角落的隔间里翻阅着罕见的纸质文件，红白二色的装束给人带来了一种微妙的虚幻感，从神态来看，她似乎在烦恼着什么。",
+      "FM_ReimuBarEvent_BarScene_Option":"尝试上前与少女搭话",
+
+      "FM_ReimuBarEvent_INIT_TEXT_0":"你招呼了与你一同来到这个幻想工造控制区域内酒吧的同伴，包括先前被你救助，最近经常主动陪你一起到行星上搜集信息的{Tokiko}少尉候补生，准备上前与那个华丽的红白身影接触。",
+      "FM_ReimuBarEvent_INIT_TEXT_1":"不过十分令人意外的，在接收到信息并会合后，你发现了{Tokiko}不同于以往的异常。尽管能看的出来有不少的克制，但从那不时外泄的微量愤怒和埋怨气息以及不怎么安分的朱色羽翼来看，这个平常就有着惊人般冷静的带翼少女目前确实不太对劲。",
+      "FM_ReimuBarEvent_INIT_TEXT_2":"然而，这激发了你的好奇心，毕竟{Tokiko}本人的反常状态表明对方也许具有较高的潜在价值。",
+      "FM_ReimuBarEvent_INIT_ANSWER":"询问{Tokiko}是否了解那个红白少女",
+
+      "FM_ReimuBarEvent_ANSWER_TEXT_0":"\"就我个人而言，我不愿意回答这个问题。\"",
+      "FM_ReimuBarEvent_ANSWER_TEXT_1":"先前微量泄露的怨气在此刻伴随着无奈与某种你前所未见的复杂情绪被压缩在了这句话中。",
+      "FM_ReimuBarEvent_ANSWER_TEXT_2":"\"不过毕竟也受了很多关照...所以这一次会和你好好解释下的。\"",
+      "FM_ReimuBarEvent_ANSWER_TEXT_3":"接着，她摆出一副向导的样子，带着一些先前的那种复杂情绪解说了起来。",
+      "FM_ReimuBarEvent_ANSWER_TEXT_4":"\"她是个危险人物，她扰乱...抱歉，维护着我故乡的秩序，是个人类，但是有着妖怪般的身体素质和异能，差不多就像手搓横轴跳跃那样的能力{-}虽然在外界也用不了就是了。\"",
+      "FM_ReimuBarEvent_ANSWER_TEXT_5":"\"除此之外，她本身倒是不知为何很受其他人欢迎，再接下来的话，我想想...就只是个令我有些讨厌的巫女罢了。\"",
+      "FM_ReimuBarEvent_ANSWER_TEXT_6":"尽管似乎带着某种不易察觉的小情绪，她的叙述仍然保持着简短清晰的特征，正如她一贯的风格。",
+      "FM_ReimuBarEvent_ANSWER_CONTACT_1":"感谢{Tokiko}的知识补充，并前去与那个红白巫女接触",
+      "FM_ReimuBarEvent_ANSWER_LEAVE":"离开并重新思考是否要进行接触",
+
+      "FM_ReimuBarEvent_CONTACT_1_TEXT_0":"你带着{Tokiko}来到了巫女所在的隔间，自然的坐下。而同时，对面那个在脑后戴着巨大红色蝴蝶结，面容清秀的红白巫女也将目光从文件上移到了你们这一行人身上，上下打量了起来。",
+      "FM_ReimuBarEvent_CONTACT_1_TEXT_1":"在你还没来得及审视巫女小姐的装束时，这个红白少女带着疑惑和不解开口了:",
+      "FM_ReimuBarEvent_CONTACT_1_TEXT_2":"\"抱歉，呃...我完全没见过你们俩，如果是要帮忙的话我暂时走不开，可以等等吗?\"",
+      "FM_ReimuBarEvent_CONTACT_1_CONTACT_2":"\"正相反，我们是来协助你解决问题的，只要协议合理\"",
+
+      "FM_ReimuBarEvent_CONTACT_2_TEXT_0":"面前的红白巫女被你刚刚的话语稍稍震撼了一下。",
+      "FM_ReimuBarEvent_CONTACT_2_TEXT_1":"\"协议合理，那么也就是说视情况而言不会收取费用而可以用其他方式偿还?\"",
+      "FM_ReimuBarEvent_CONTACT_2_TEXT_2":"在一句话的时间内，这个巫女迅速的从先前的烦恼转化为了某种相当积极的态度。",
+      "FM_ReimuBarEvent_CONTACT_2_TEXT_3":"根据这一番发言和转变，你显然能分析得出，面前的少女也许正处于一种资金不足的状态，这对雇佣兵来说并不是一个好消息。",
+      "FM_ReimuBarEvent_CONTACT_2_TEXT_4":"不过从另外的角度来说，尽力帮助这么一个少女仍然不失为一件美事，毕竟突然出现一个有着十七岁少女外貌的高级军官命令你执行歼灭余晖舰队这样高危险的任务这种事情实在是太小概率了。而巫女小姐本身据{Tokiko}所言似乎也不是那种危险人物。再加上少女可能的潜在价值，你判断这一次任务也许有着相当的性价比。",
+      "FM_ReimuBarEvent_CONTACT_2_TELL_STORY_1":"\"正是如此，您意下如何?\"",
+
+      "FM_ReimuBarEvent_TELL_STORT_1_TEXT_0":"听完这话，面前的红白巫女肉眼可见的放松了下来",
+      "FM_ReimuBarEvent_TELL_STORT_1_TEXT_1":"\"嘛，其实并不是什么非常难以解决的问题。\"",
+      "FM_ReimuBarEvent_TELL_STORT_1_TEXT_2":"\"直接从解决方法来说，我正在寻找一支能在星域内自由行动探索的独立舰队，能带着我去确认一下那些最近都不知道跑到哪里去了的老朋友们的近况，没有时间限制。\"",
+      "FM_ReimuBarEvent_TELL_STORT_1_TELL_STORY_2":"\"这听起来有些复杂，但并不是件困难的事情，需要的资金也不会那么多\"",
+
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_0":"红白少女的表情又逐渐复杂起来。",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_1":"\"没错，正因为如此...\"",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_2":"接下来，她深吸了一口气，非常严肃的说道:",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_3":"\"现在我身上没有一个星币，所以...\"",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_4":"\"咳咳...\"",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_5":"就在你准备就这个离谱的报价再进行思考时，这意外的声音打断了你的思路。回过头来，发现开始时一直在身边旁观交涉的{Tokiko}此时正捂嘴尝试抑制自己的笑声。",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_6":"\"你笑什么?\"",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_7":"被打断的巫女小姐似乎生出了些许不满。",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_8":"\"抱歉抱歉，我只是没想到幻想乡的博丽巫女小姐竟然会不得不到外界来，而且...\"",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_9":"\"哎呀，看起来最近没了大结界约束的妖怪还真是有能耐了呢...\"",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_10":"不过，对于英仙座的星舰舰长们来说，如此有趣的少女间互动显然有着别样的乐趣。而且，你能感觉到，目前的情况仍然处于日常交流的范畴之内。",
+      "FM_ReimuBarEvent_TELL_STORT_2_TEXT_11":"但放着不管真的好吗?",
+      "FM_ReimuBarEvent_TELL_STORT_2_TELL_STORY_3A":"沉默，但是更加仔细地观察二人",
+      "FM_ReimuBarEvent_TELL_STORT_2_TELL_STORY_3B":"尽管对后续发展十分感兴趣，但仍然尝试让这两个家伙冷静下来",
+
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_0":"你静下心来体会两个可爱少女之间微妙的气氛。但没过多久，不知道是因为手头紧还是重新意识到了自己在找人帮忙，红白的巫女带着一脸无奈，败下阵来。",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_1":"接着，带着安分的无奈表情，思考过后的红白巫女吐出了这么一句话。",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_2":"\"唔呣，我好像想起来你是哪个家伙了。\"",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_3":"\"对，然后你竟然还把我的书抢...\"",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_4":"\"啊对对对，后面你还被那个黑白家伙揍惨了呢，哎呀，早说嘛...\"",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_5":"\"你以为这是谁的问题啊?!\"",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_6":"\"唔呣，但是你看，我作为巫女治退妖怪显然是没有任何问题的吧? 而且你后面还把道具店的门砸坏了，我这么做不是提前解决了问题嘛! 唔，这么说我做的不是非常好?\"",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_7":"\"...果然谈这些一点用都没有啊...\"",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_8":"于是，这边本来由于先前对峙中的优势而有些许得意神情的带翼少女，在这第二轮交锋之后也变成了一脸无奈无语的样子。",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_9":"而另一边的红白，从她那最终确定的放松但迷惑的神态来看，她并未意识到刚刚的话语对{Tokiko}的打击。",
+      "FM_ReimuBarEvent_TELL_STORT_3A_TEXT_10":"总之，这边的幻想喜剧似乎告一段落了。",
+
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_0":"有时越是复杂的局面，就越需要用简单的方式去打破。",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_1":"你拍了拍身边{Tokiko}不安分的羽翼，然后相当直接的对着这个变得疑惑和意外的带翼少女，还有对面同样满脸问号的红白巫女，提出了问题: 你们两个以前有着怎样的过节呢?",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_2":"效果显而易见，{Tokiko}挂上了一副”别在这种时候”的无奈表情，而对面的巫女似乎松了一口气。",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_3":"\"好吧，让我来把这个事情说的详细一些...\"",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_4":"尽管还是有些不太情愿，身边的带翼少女还是迅速接上了话题。",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_5":"\"虽然这个红白好像完全忘了我，但是我可不会忘记这个不讲道理的野蛮女人。\"",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_6":"\"野蛮?等等我好像...\"",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_7":"\"这个暴力狂曾经在人家安安静静读书的时候从背后袭击过来，还把我的书抢走了，没有归还没有道歉，甚至还纠集了其他人一起欺负人家!\"",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_8":"\"啊我知道了是那个时候的...\"",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_9":"\"光天化日之下身为秩序维护者竟然如此横行乡里欺压百姓! 何等耻辱! 所以呢，我亲爱的指挥官大人，这种粗暴的家伙显然是不值得去关心的，那么...\"",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_10":"\"啊啊啊! 我道歉啦真是的...还是别在意过去，让我们先好好协商下如何带我离开这先!\"",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_11":"于是在被迫想起来自己的所作所为并被怨气满溢的受害者一顿数落和威胁之后，面前的巫女小姐还是想起来了自己要做什么。",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_12":"另一边，你尽量忽略掉{Tokiko}叙述时不经意间出现的奇怪语气，整理了思路准备重新交涉。",
+      "FM_ReimuBarEvent_TELL_STORT_3B_TEXT_13":"总之，这边的幻想喜剧似乎告一段落了。",
+
+      "FM_ReimuBarEvent_TELL_STORT_3AB_DEAL_1":"重新开始商议博丽巫女的登舰事项",
+
+      "FM_ReimuBarEvent_DEAL_1_TEXT_0":"多亏了先前的奇怪情景剧，当前的交涉氛围似乎变得轻松了一些。",
+      "FM_ReimuBarEvent_DEAL_1_TEXT_1":"眼下的问题是，博丽巫女小姐的要求对你的舰队来说算是一个相当长期的乘客护送任务。但是显然预期能赚到的星币比你预估的最小值还要低。鉴于独立舰长和雇佣兵的身份，你还是想在直接协助之前让这个看起来就很幻想和浪漫的少女多少接触一些英仙座的现实。",    
+      "FM_ReimuBarEvent_DEAL_1_DEAL_2":"\"那么除了星币之外，你能提供些什么来进行担保呢?\"",
+
+      "FM_ReimuBarEvent_DEAL_2_TEXT_0":"毫不犹豫地，红白巫女给出了令人震惊的答复。",
+      "FM_ReimuBarEvent_DEAL_2_TEXT_1":"\"治退那些在飞船上涂着红色骷髅的家伙?\"",
+      "FM_ReimuBarEvent_DEAL_2_TEXT_2":"为了防止误判，你再一次上下打量了面前的红白巫女。但和先前的结果一样，从外表上看，这仍然只是个戴着巨大红色蝴蝶结，身着华丽巫女服的少女而已{-}正如常服的{Tokiko}一样，看起来不像是能够战斗的情况。",
+      "FM_ReimuBarEvent_DEAL_2_TEXT_3":"\"啊对了，说起来准备从这里离开之前，有些穿着制服的外界人让我做了个什么培训...因为那个老家伙钦定要我去，加上这活动还蛮有意思的，所以我就陪他们玩了十几天...然后他们给了我这个。\"",
+      "FM_ReimuBarEvent_DEAL_2_TEXT_4":"就在你继续思考新的说明和解释时，那个红白巫女重新拿出了先前收起来的纸质文件，并将其完全呈递给你。",
+      "FM_ReimuBarEvent_DEAL_2_TEXT_5":"几乎是完全预料到了这种能力调查或者面试一般的情况，这份文件几乎将这个红白能在舰队作战中完成的任务都详细解释说明了一遍，并详细的给出了她目前作为舰队军官的能力参考。而从来源是幻想工造的舰队学院这一点来说，其可靠性有着相当的保障。",
+      "FM_ReimuBarEvent_DEAL_2_TEXT_6":"看起来，你似乎又一次捡到了一个有着幻想般外貌和意外强大现实能力的奇异少女。",
+      "FM_ReimuBarEvent_DEAL_2_DEAL_3":"\"以在我的舰队中担任舰长作战作为担保如何?\"",
+
+      "FM_ReimuBarEvent_DEAL_3_TEXT_0":"\"唔呣，我是随便啦，只要能有去处，不要那么无聊。\"",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_1":"巫女似乎对此完全不在意。",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_2":"\"本来还在担心没有了结界以后的问题，但是结果那些妖怪人类一个一个都去体验外面的世界去了...而且明明就很危险的嘛!\"",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_3":"\"结果虽然很想宅在神社...但是没人来真是太无聊了! \"",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_4":"气氛似乎又回到了不那么现实的一侧。看来巫女小姐对于先前所声称的友人们还是相当在意的。",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_5":"而在你重新思考这么做是否合乎道义和安全时，身边的{Tokiko}看似漫不经心的插进了一句话:",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_6":"\"一个非常可行的方案，毕竟这个怪巫女可是有几乎能无效化一切危机的直感和运气的，这没开玩笑。\"",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_7":"相当玄学，但是你莫名能感觉到其中的真实性。",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_8":"\"况且，指挥官先生对于尽力保障同伴安全这一方面...在自己能力范围内，做得还算不错。\"",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_9":"\"不过很多时候还是会因为指挥和武器问题扩大损失，以后可要更认真才行哦?\"",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_10":"看起来{Tokiko}还是一如既往的在这些事务上十分认真。",
+      "FM_ReimuBarEvent_DEAL_3_TEXT_11":"也多亏了这个带翼少女一番解析，包括你在内的另外两人似乎都更加认同了自己刚才的选择。",
+      "FM_ReimuBarEvent_DEAL_3_FINAL":"在心中感谢{Tokiko}的宽宏大量和协助，并处理最后的手续",
+
+      "FM_ReimuBarEvent_FINAL_TEXT_0":"当一切都接近结束时，你忽然想起忘记询问红白巫女的姓名。",
+      "FM_ReimuBarEvent_FINAL_TEXT_1":"\"唔? 说起来好像是这样呢，但是因为很累很麻烦...\"",
+      "FM_ReimuBarEvent_FINAL_TEXT_2":"眼看就要说出”自己去看”的瞬间，巫女小姐停了下来，思考了片刻。",
+      "FM_ReimuBarEvent_FINAL_TEXT_3":"\"不过考虑到以后要好好相处，果然还是认真一些好了。\"",
+      "FM_ReimuBarEvent_FINAL_TEXT_4":"\"我是{Hakurei Reimu}，博丽神社的巫女。\"",
+      "FM_ReimuBarEvent_FINAL_TEXT_5":"少女的微笑给这一次奇妙的相遇画上了句号。",
+      "FM_ReimuBarEvent_FINAL_LEAVE":"结束",
+
+      #Tokiko Event (Bar)
+      "FM_TokikoBarEvent_BarScene":"一个将面孔和身形隐藏在兜帽和斗篷下的身影正在室内来回游荡，看起来似乎在躲避着什么，而另一边逐渐接近的嘈杂也似乎证实了有一场追捕即将上演，某个瞬间，你能感受到游荡者焦虑的目光。",
+      "FM_TokikoBarEvent_BarScene_Option":"用眼神对游荡者示意，将其招呼到自己的隔间",
+
+      "FM_TokikoBarEvent_INIT_TEXT_0":"兜帽和斗篷下的身影迟疑了片刻，但之后毫无犹豫的快步走向了你的位置。 然而就在此时，追踪者们也注意到了他们要寻找的目标，抢在你的庇护之前实施抓捕。 在观察追踪者时，你注意到了部分成员身上的左径纹身和标志物。",
+      "FM_TokikoBarEvent_INIT_TRY_TO_HELP":"暗示你在酒吧内其他位置的几名随从试图拖延左径追踪者",
+
+      "FM_TokikoBarEvent_TRY_TO_HELP_TEXT_0":"你的部下成功的在未引发混乱的前提下阻碍了左径追踪者，游荡者也趁此机会进入了你的隔间。",
+      "FM_TokikoBarEvent_TRY_TO_HELP_TEXT_1":"回过神来的左径追踪者表现出了明显的不甘，在隔间的屏蔽力场外来回踱步。 但隔间内的获救者无论你如何问话示意都一言不发，并仍然保持着兜帽与斗篷的装束。 你对此十分无奈，不得不将注意力转移回到了左径分子的行动。 ",
+      "FM_TokikoBarEvent_TRY_TO_HELP_TEXT_2":"在分析了隔间外负责监视的下属提供的情报后，你意识到对于这些显然已经长时间深入幻想工造境内追踪的左径分子来说，大约{%s}星币的贿赂就能够在一段时间内打发走他们。",
+      "FM_TokikoBarEvent_TRY_TO_HELP_TEXT_3":"即便不出资金，你也有信心再等待一会便能让这些追踪者离开，但这个获救者会不会在下一刻再度陷入困境就难说了。 ",
+      "FM_TokikoBarEvent_TRY_TO_HELP_NEED_CREDITS":"显然目前你手头的资金并不足够直接打发走他们。",
+      "FM_TokikoBarEvent_TRY_TO_HELP_DECIDE":"划出相应数量的星币并走出隔间直接与左径分子交涉",
+      "FM_TokikoBarEvent_TRY_TO_HELP_LEAVE":"继续等待直到左径分子离去",
+
+      "FM_TokikoBarEvent_LEAVE_0":"正如你所料，左径分子在一段时间后离去了，然而自始至终你都未从这个神秘获救者口中得到任何信息，鉴于此情况，你在简短的感叹后便放走了这个神秘人。 但是显然，左径分子不会善罢甘休。",
+
+      "FM_TokikoBarEvent_DECIDE_TEXT_0":"面对气在头上的左径分子，你展现出了令人震撼的冷静和远见，成功说服了这些底层人员，让他们不得不承认某些时候实在的星币会比远大的理想更为有用。",
+      "FM_TokikoBarEvent_DECIDE_TEXT_1":"解决了这方面的威胁之后，你重新将注意力放回到了这名神秘的获救者身上。 而此时在见到追踪者离去之后，这名获救者终于开口了:",
+      "FM_TokikoBarEvent_DECIDE_TEXT_2":"\"谢谢...\"",
+      "FM_TokikoBarEvent_DECIDE_TEXT_3":"辨识度相当高的女性嗓音传入耳中。 据此，你迅速而粗略的判断了一下对方的生物年龄: 看起来这个被左径信徒追捕的家伙至多也不过刚刚成年。 结合之前所观察到的，行为姿态并无生化改造特征这一信息，你下意识的认为: 这只是又一个在行星上过着可贵的日常，憧憬着太空歌剧般冒险，幻想着星舰舰长之间爱恨故事的平民少女。 短暂的思考后，你决定稍稍的展现一下自己，将这名少女绅士般的送出这块是非之地，给她留下一点小小的浪漫回忆后结束这一切。",
+      "FM_TokikoBarEvent_DECIDE_TEXT_4":"然而就在你废了点力气挤出一个成熟精明的老舰长一样的微笑，并转向少女决定开口时，你突然注意到了些许异常。 ",
+      "FM_TokikoBarEvent_DECIDE_TEXT_5":"从焦虑与不安中逐渐平复的少女不知何时稍稍的放松了兜帽的遮掩，并开始用一种令人熟悉的，星舰舰长一样的方式迅速检视着周边。 而失去了部分遮蔽显露出来的银白色与蓝紫色发丝则激起了你新的好奇心。 在幻想工造境内，确实存在着许多有着此类非常识特征的”人类”并参与着生产生活的各个方面，尽管根据经验这种角色在与星舰和太空相关的场合并不多见。 但这一层可能性加上她刚才表现出的类似星舰舰长的机敏，让你不得不再次思考。",
+      "FM_TokikoBarEvent_DECIDE_CONTACT_1":"\"让我猜猜，幻想工造这一次的情报工作似乎做的并不如以往优秀?\"",
+      "FM_TokikoBarEvent_DECIDE_LEAVE":"\"像你这样美丽的小姐可不应该随意的靠近这种地方，如果不介意的话，请允许我暂时从一个变为一个绅士为你护送?\"",
+      "FM_TokikoBarEvent_DECIDE_LEAVE_TIP":"逞一时的英雄可能会耽误大局",
+
+      "FM_TokikoBarEvent_LEAVE_1_P0":"少女愣了一下，但随后很快的恢复了正常。",
+      "FM_TokikoBarEvent_LEAVE_1_P1":"\"那么这一次就麻烦舰长先生你了。\"",
+      "FM_TokikoBarEvent_LEAVE_1_P2":"正如预料一般的回应，你内心也松了口气，对方看来确实仅仅是想要体会一下那种太空歌剧气氛的普通人，只是不小心招惹上了左径分子。",
+      "FM_TokikoBarEvent_LEAVE_1_P3":"接下来的事情一切正常，尽管你实际并不清楚自己做的是否真的绅士，你还是牵着神秘少女的手将其带离了酒吧。 重新回到室外时恰好呈现的夕阳相当契合的营造出了浪漫的氛围，你趁势与少女告别，试图留下一个不受束缚，自由而传奇的佣兵形象。",
+      "FM_TokikoBarEvent_LEAVE_1_P4":"虽然到最后也没有看到少女真正的面容这一点有些遗憾，但想必这就是那份独属于星舰舰长的浪漫与温柔吧。",
+
+      "FM_TokikoBarEvent_CONTACT_1_TEXT_0":"\"果然外界的星舰舰长直觉真是不错。\"",
+      "FM_TokikoBarEvent_CONTACT_1_TEXT_1":"对方并没有预想当中的慌乱，而是给出了一个相当肯定的答复，这让你有些小小的震撼，一丝奇妙的紧张感伴随着点点兴奋逐渐浮现于你的内心。",
+      "FM_TokikoBarEvent_CONTACT_1_TEXT_2":"在你迅速思考的同时，并未意识到少女正将兜帽与斗篷的掩饰解除。 回过神来时，原先隐藏的身形与面孔已完全呈现在了你的眼前。 ",
+      "FM_TokikoBarEvent_CONTACT_1_TEXT_3":"虽然已经有所准备，蓝白相间的短发下少女精致的面容与红色眼瞳还是让你暗暗感慨。 设计精巧的连衣裙与长筒靴的搭配则透露出一种带着些许华丽感的古典风格。 但最为引人注意的，仍然是少女身后朱色与白色羽毛构成的双翼。 这双翅膀加上少女头上的羽翼状器官和角，无不昭示着少女绝非常识中的人类这一事实。 ",
+      "FM_TokikoBarEvent_CONTACT_1_TEXT_4":"对于星舰舰长来说，面前微笑着的少女所散发出的传统美与梦幻感无疑有着巨大的杀伤力，但就在你大脑因此停机之前，新的思考与疑问将你拉回了英仙座。",
+      "FM_TokikoBarEvent_CONTACT_1_TEXT_5":"容姿秀丽的少女，加上先前试图降低注意力的变装，在确认了她与幻想工造舰队的关系之后，你对她的身份有了新的思考。 如果你预想的情况属实，也许你能在这里获得一些相当有价值的信息。",
+      "FM_TokikoBarEvent_CONTACT_1_CONTACT_2":"\"那么你被左径追踪的原因是你的特工身份?\"",
+
+      "FM_TokikoBarEvent_CONTACT_2_TEXT_0":"\"若是以幻想工造的情报为目标的话，我这里所有的和你手上的几乎无异，毕竟我也并非真正的情报人员。\"",
+      "FM_TokikoBarEvent_CONTACT_2_TEXT_1":"在某个瞬间，你从少女的表情中感知到了一丝无奈和恼火，但旋即便消失了。",
+      "FM_TokikoBarEvent_CONTACT_2_TEXT_2":"\"虽然在当前的情况下确实为了获取一些与左径相关的信息而受到了比以往更多的关注，我的本职还是常规的舰队指挥。\"",
+      "FM_TokikoBarEvent_CONTACT_2_TEXT_3":"\"不过...这里倒是有一份近期即将执行的特殊作战计划，虽然是那种对外人毫无作用的方案，但就当是这一次帮忙的谢礼，可以完全给你展示一下哦?\"",
+      "FM_TokikoBarEvent_CONTACT_2_TEXT_4":"一切都十分的突然，桌上不知何时多出了一个带有幻想工造标志的PAD。 接下来，来不及回答的你惊异的看着面前这个像是从古代的故事书中穿越而来的少女熟练的打开了PAD的全息演示功能，自然的开始解说起来，就像那些常常需要你这类独立舰队执行敏感任务的高级将校一样。",
+      "FM_TokikoBarEvent_CONTACT_2_TEXT_5":"\"别担心，他们可能从没有想过让我完成这项任务...\"",
+      "FM_TokikoBarEvent_CONTACT_2_BEFORE_BATTLE_1":"欣赏少女认真工作姿态的同时将大部分注意力集中于她的计划",
+
+      "FM_TokikoBarEvent_BEFORE_BATTLE_1_TEXT_0":"\"通常来看，这项任务相当简单: 自由拟定舰队组成方案，从常规巡逻队中抽调战斗舰船重组一支小规模独立舰队。 由我指挥这支部队，在半个月内对 Inverted Castle 周边的各种左径舰队进行压制以维护贸易路线，补给和维护，以及对人员的医疗保障也将积极提供。 然而...\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_1_TEXT_1":"少女叹了口气，继续说道:",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_1_TEXT_2":"\"虽然上面的人似乎看在我的校内成绩份上而在这一次给予了我相当大的舰队调配权限，但除了这一项与舰队后勤之外，其他所有的辅助资源都少的可怜，尤其是情报方面。\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_1_TEXT_3":"\"正如你所说，这次我所接收到的敌方情报几乎为零，我想这甚至不是他们故意的，事实上，最近的左径活动无论在太空还是地面都变得更加有组织性，更加难以预测了，这意味着这项任务的风险是相当大的。\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_1_TEXT_4":"\"但实际上，由大型舰队进行的定期巡逻歼灭任务已经在相当大的程度上免除了左径舰船的威胁，再继续投入小型舰队执行这种压制任务无疑是徒增风险。\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_1_TEXT_5":"\"所以他们也非常理智的给我留好了退出通道，只要简单的写一句放弃此任务就能回归到正常。\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_1_TEXT_6":"\"到此为止，我想你也能够看出给我这项任务的实质目的就是在要求我知难而退放弃对吧?\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_1_BATTLE_2":"\"可你还是为这个任务做出了这个完整的作战计划\"",
+
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_0":"\"因为我不想在这里向这些不讲道理的家伙妥协。\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_1":"刹那之间，你感受到了少女情绪出乎意料的波动。",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_2":"\"明明最开始只是想要和以前一样方便的读书，了解外界的历史和知识，结果却被校方的人类——嗯，还有那个老妖婆，硬是推进了指挥科...\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_3":"平复下来的少女以一种平淡朴素的口吻开始诉说，但是你还是能略微的感受到她的不满。",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_4":"\"但是，毕业后，我果然还是不愿意被束缚在这里...\"少女的表情变为了苦笑。",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_5":"\"于是在我申请退出的时候，上面给我出了这道难题，若是无法完成，自然就无法退出。\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_6":"\"不过，我可不会一而再再而三的被这种对手随意的打发走...\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_7":"这一次，你感觉她明显的激动了起来，背后的翅膀也开始微微的扇动。 ",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_8":"\"总是遇到这些不讲道理的家伙，真是十分的令人不爽啊! 简直和那个很久之前...好像也没多久...啊算了，总之是之前抢了我的书，一个很令人恼火的红色家伙一样，不讲道理，不讲道理啊!\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_9":"少女展现出了和之前的气质完全不同的，一种难以言表的兴奋劲。",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_10":"\"毕竟没有条件就要创造条件，所以为了能成功的解决这个难题，让上面的大人们老老实实的接受我的退出，这一段时间我可是从零开始在扮演一个专业情报员...\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_11":"\"不过...\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_12":"肉眼可见的气氛沉重化让你猜到了她这一路下来还是吃了不少苦头。 但这并未持续多久。",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_13":"\"这一段的工作确实有够麻烦的，\"她轻叹了一下，\"但是最后，就是现在，因为你的帮助，我终于能撑到计划实行之前了。\"",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_14":"少女重新展现出笑容，这让你感到一种莫名的安心，同时，虽然完全没有获得你预料的情报，你却有了一些新的想法。",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_TEXT_15":"独立舰队指挥官的身份以及这一身份所带来的竞争心，让你对少女个人的实战能力产生了兴趣。 你非常好奇，这个有着非同寻常可爱外表的舰队学院应届毕业生，到底是否如她本人所说一样能担当如此大任。",
+      "FM_TokikoBarEvent_BEFORE_BATTLE_2_STORY_BATTLE":"\"你的计划看起来还不赖，但是我认为你的舰队组成方案并不理想\"",
+
+      "FM_TokikoBarEvent_STORY_BATTLE_TEXT_0":"\"嗯?\"",
+      "FM_TokikoBarEvent_STORY_BATTLE_TEXT_1":"正如你所料，先前无意中暴露出来的，少女不怎么服输的个性有些许，或者很多，被激发了出来。",
+      "FM_TokikoBarEvent_STORY_BATTLE_TEXT_2":"\"看起来指挥官先生是个指挥经验相当丰富的人呢，若是能和这样的对手进行一次友好的模拟战，想必对即将执行的作战计划也是相当有益。\"",
+      "FM_TokikoBarEvent_STORY_BATTLE_TEXT_3":"尽管少女仍然保持着微笑，但你能感觉到两人之间不断弥漫的火药味。",
+      "FM_TokikoBarEvent_STORY_BATTLE_TEXT_4":"然而，作为一名独立舰队指挥官，你也觉得自己的指挥经验与战斗技巧多少还是能让你在与这种至多只是舰队学院毕业生的家伙的战斗中占据上风。",
+      "FM_TokikoBarEvent_STORY_BATTLE_BATTLE_END":"不管后续如何，先同意模拟战的要求并按照规则组建一支你自认为强大的舰队，进入模拟战",
+
+      "FM_TokikoBarEvent_BATTLE_END_TEXT_0":"无论结果如何，至少你亲身体了一下少女的好胜心。",
+      "FM_TokikoBarEvent_BATTLE_END_TEXT_1":"少女精心准备的舰队令人印象深刻，其舰船装配与战术几乎可以算是这个级别的舰队战斗中顶级的解决方案了，这对你可以说相当有借鉴意义。 而她本人所表现得战斗素养也让你不禁心动: 虽然不是在真实战场上，但能在模拟战中做到这个级别，也算是能够独当一面了。",
+      "FM_TokikoBarEvent_BATTLE_END_TEXT_2":"接下来，你将视线放回少女身上，她似乎对方才的战斗还算满意: 尽管表情仍然保持着微笑，但是背后不太安分的双翼与先前情况形成的鲜明的对比，显得十分可爱。 这让你不得不在心中感叹，也许都市传说中那些操纵人心，有着超常魅力的妖怪，就是靠着这种惹人怜爱的特质，一步一步的俘获人类的。",
+      "FM_TokikoBarEvent_BATTLE_END_TEXT_3":"快速的过滤掉脑海中的古怪想法后，你开始思考说服这个带着些许幻想气质的少女加入的方法。",
+      "FM_TokikoBarEvent_BATTLE_END_LAST":"\"小姐，依我看，如果你的目标是自在的生活，那么加入独立舰队成为一名军官同样是一种选择。 而恰好，我的舰队当前正需要你这种优秀的舰长\"",
+
+      "FM_TokikoBarEvent_LAST_TEXT_0":"虽然你尝试像一个经验丰富的老雇佣兵一样达成协议，但对方似乎完全没有在这一点上理解。",
+      "FM_TokikoBarEvent_LAST_TEXT_1":"\"唔呣，如果是这样的话，我想我还是需要等到这项任务结束后再给出回应?\"",
+      "FM_TokikoBarEvent_LAST_TEXT_2":"看来对方是打定主意要按部就班了。 而在充分见识到了少女的行动力之后，你也明白耐心的等待可能是唯一的选择。",
+      "FM_TokikoBarEvent_LAST_LEAVE":"为了留下一个不错的印象，试图像一个绅士一样与她告别",
+
+      "FM_TokikoBarEvent_LEAVE_2_TEXT_0":"你尝试模仿印象中那些出身于{Eventide}的霸主高级军官行礼告别，但却一不小心搞错了姿势，而这一切都被少女尽收眼底。",
+      "FM_TokikoBarEvent_LEAVE_2_TEXT_1":"\"抱歉，指挥官先生，但是我想你的行礼姿势可能有些小失误?\"",
+      "FM_TokikoBarEvent_LEAVE_2_TEXT_2":"幸好，少女接下来放松的轻笑证明了你留下的印象还不算糟糕。",
+      "FM_TokikoBarEvent_LEAVE_2_TEXT_3":"\"如果我真的加入了的话，倒是能稍稍的教给指挥官先生一些传统的礼仪呢——虽然也都是书本上的知识了。\"",
+      "FM_TokikoBarEvent_LEAVE_2_TEXT_4":"\"那么最后，我的名字是{Tokiko}，再会了。\"",
+      "FM_TokikoBarEvent_LEAVE_2_TEXT_5":"轻轻的鞠躬道别之后，少女重新穿戴好了兜帽与斗篷，走出了隔间，不一会便从你的视线中消失了。",
+
+      "FM_TokikoBarEvent_LEAVE_DONE":"离开",
+
+      #Tokiko Event (Intel)
+      "FM_TokikoBarEventIntel_Name":"三色带羽的阅读者",
+      "FM_TokikoBarEventIntel_NameCompleted":"三色带羽的阅读者 - 完成",
+      "FM_TokikoBarEventIntel_NameFailed":"三色带羽的阅读者 - 失败",
+
+      "FM_TokikoBarEventIntel_WAIT_BEFORE":"你和{Tokiko}交换了联系方式以便今后更加深入的合作，但目前仍然没有什么值得关注的。",
+      "FM_TokikoBarEventIntel_WAIT_AFTER_P0":"你截获了一则卢德左径的远程广播。",
+      "FM_TokikoBarEventIntel_WAIT_AFTER_P1":"这则信息声称他们已经俘虏不久前负责执行压制任务的幻想工造指挥官{Tokiko}，并以此要挟幻想工造方面在期限内释放先前被俘的多名左径头目。",
+      "FM_TokikoBarEventIntel_WAIT_AFTER_P2":"你的战略分析师认为面对这种突发的恐怖行为，并考虑到被俘者的战略价值，幻想工造方面可能暂时难以决定是否组织救援行动或进行谈判。 ",
+      "FM_TokikoBarEventIntel_WAIT_AFTER_P3":"考虑到{Tokiko}的任务性质和军事背景，和平解决的可能性不高。但同时，低战略价值暗示着对被俘者的看守也将相对低。",
+
+      #"FM_TokikoBarEventIntel_WAIT_AFTER_P0":"你的情报官一反常态慌张的发来一条信息，告知你收到了一条来自卢德左径附带视频的远程广播。",
+      #"FM_TokikoBarEventIntel_WAIT_AFTER_P1":"你有些不安的接收了通讯，打开了视频。 但接下来的情况严重性超乎了你的想象。",
+      #"FM_TokikoBarEventIntel_WAIT_AFTER_P2":"画面中，那个不久前被你所帮助，与你谈笑，有着优雅双翼的少女，现在正在你的眼前，除了翅膀之外的肢体被紧紧的绑在椅子上。",
+      #"FM_TokikoBarEventIntel_WAIT_AFTER_P3":"紧接着，一个全身包裹在动力装甲内的左径士兵将少女的右翼强行扯开，启动了装甲的等离子切割器，将这片有着艳丽朱色羽毛的翅膀硬生生截断了一半。",
+      #"FM_TokikoBarEventIntel_WAIT_AFTER_P4":"无声的影片到此为止，剩下唯一的文字信息则简短的恐吓到:如果幻想工造无法在期限内释放先前被俘的左径头目，这个\"亵渎的生物\"将消逝于虚空当中。",
+      #"FM_TokikoBarEventIntel_WAIT_AFTER_P5":"在你震惊的同时，身边陪同的战略分析师小心翼翼的提醒你，幻想工造很可能暂时无法顾及这种突发的恐怖事件。 并且，由于{Tokiko}少尉候补生的幻想工造背景和较低的预期价值，她也绝无可能像被俘获的学院的研究员一样受到好生对待，事实上方才的视频就已经证实了这一点。",
+
+      "FM_TokikoBarEventIntel_WAIT_BulletPoint_0":"事态发生了重大变化",
+      "FM_TokikoBarEventIntel_WAIT_BulletPoint_1":"无论从何种角度考虑，最好先回到{%s}再思考营救与否",
+
+      "FM_TokikoBarEventIntel_RESCUE_CrDes":"地面防空火力的干扰还是造成了战备下降",
+      "FM_TokikoBarEventIntel_RESCUE_P0":"你的部下和船员们大多都对行动的成功与少女的到来感到十分兴奋。",
+      "FM_TokikoBarEventIntel_RESCUE_P1":"但另一方面，尽管救出了少女，你仍未与她好好的会面交谈过预定事项，甚至在行动后连一句话都没说上。不过正当你仍在思考该在何时何地继续交涉时，少女通过先前的联络方式发来了私人会话的邀请。",
+
+      #"FM_TokikoBarEventIntel_RESCUE":"少女目前仍在医务室修养，但是你的医务官表示她的状况已经缓解了不少，甚至被削去部分的翅膀也有着奇迹般的复原迹象。",
+
+      "FM_TokikoButton":"安排与少女的会面",
+
+      "FM_TokikoBarEventIntel_FAILED_BulletPoint":"近期消息显示幻想工造从左径基地中救出了{Tokiko}，看来这没有你的机会了",
+
+      #Tokiko Event (Final)
+      "FM_TokikoBarEventFinal_INIT_TEXT_0":"在预定时间的五分钟前，你与那个有着蓝白发色的奇异少女几乎同时到达了会面地点。",
+      "FM_TokikoBarEventFinal_INIT_STAGE1":"轻松的打一个招呼进行问候",
+
+      "FM_TokikoBarEventFinal_STAGE1_TEXT_0":"\"唔诶?\"",
+      "FM_TokikoBarEventFinal_STAGE1_TEXT_1":"和预想当中的不太一样，对于你的突然问候，这个年轻的舰队军官似乎有那么一点点受惊。不过在看到你之后，她很快就从受惊女孩的状态变回了那个更令人熟悉的认真少女。",
+      "FM_TokikoBarEventFinal_STAGE1_TEXT_2":"\"哎呀呀，没想到会被这样吓一下。\"",
+      "FM_TokikoBarEventFinal_STAGE1_TEXT_3":"带着一丝小小的无奈，少女如是说道。",
+      "FM_TokikoBarEventFinal_STAGE1_TEXT_4":"接着，这个有着优雅羽翼的少女稍稍整理了表情与衣着，如先前告别时一样，带着相当的传统意味和些许郑重，向你鞠躬行礼。",
+      "FM_TokikoBarEventFinal_STAGE1_TEXT_5":"\"这次能够提前脱离，都是多亏了指挥官先生，十分感谢。\"",
+      "FM_TokikoBarEventFinal_STAGE1_STAGE2":"按照预定，和少女一起进入作为会谈地点的房间，准备就先前提议加入的情况进行讨论",
+
+      "FM_TokikoBarEventFinal_STAGE2_TEXT_0":"尽管在当今这个黄昏般的时代，大多数星舰的生活条件和内部环境都被修改或设计为几乎只满足最基本的生活需求，你最终还是从某处找到了一个能够一边喝着茶观赏星空一边交谈的房间作为与少女再次交涉的地点。",
+      "FM_TokikoBarEventFinal_STAGE2_TEXT_1":"进入房间坐到椅子上的少女从外表看上几乎与你先前在行星上的所见别无二致，唯一的不同也许是那件无论怎么看都令人感到与太空或者星舰之类格格不入的素雅连衣裙，在此刻相比先前所见多了少许风霜的痕迹{-}比如裙摆上尘土所留下的污痕和袖子的液滴遗踪。尽管这显然不是因为战斗之类而留下的，但仍然能引人遐想其经历。然而这些少的可怜的”现实”墨迹肉眼可见的并未对少女整体的幻想感有任何的改变，反而让初次见面时所展现出的那种神秘与传统气息更加突出。",
+      "FM_TokikoBarEventFinal_STAGE2_TEXT_2":"在又一次于内心中小小感叹了少女的谜之魅力后，你准备切入正题。但就在你低头思考如何谈起时，少女却问出了一个令你意想不到的问题。",
+      "FM_TokikoBarEventFinal_STAGE2_TEXT_3":"\"指挥官先生有对我的身份背景有过更深层的疑惑，并尝试去彻底的探查过吗?\"",
+      "FM_TokikoBarEventFinal_STAGE2_TEXT_4":"你抬起头，目中所见是一脸写着认真与好奇，用一种奇异的目光注视着你的少女。",
+      "FM_TokikoBarEventFinal_STAGE2_TEXT_5":"\"我很好奇。\"",
+      "FM_TokikoBarEventFinal_STAGE2_STAGE3A":"\"即便作为一个雇佣兵，我也不是那种无礼之徒\"",
+      "FM_TokikoBarEventFinal_STAGE2_STAGE3B":"\"对于感兴趣的东西，我一向不会吝惜时间去检索\"",
+      "FM_TokikoBarEventFinal_STAGE2_STAGE3C":"\"你为什么问这个?\"",
+
+      "FM_TokikoBarEventFinal_STAGE3A_TEXT_0":"\"看来指挥官先生如我所料，是个有一定原则的人呢。\"",
+      "FM_TokikoBarEventFinal_STAGE3A_TEXT_1":"少女似乎对这个回答很满意。",
+      "FM_TokikoBarEventFinal_STAGE3A_TEXT_2":"\"虽然在星域当中几乎都被归类于同一种身份，但成千上万的星舰舰长与舰队指挥官们，总归是彼此不同的。\"",
+      "FM_TokikoBarEventFinal_STAGE3A_TEXT_3":"\"显然，凶狠的星际匪帮，不畏强权奋起反抗的游击舰队，动起歪脑筋的拾荒者，走私物资的不法商人，都可以被定义为海盗，但是...\"",
+      "FM_TokikoBarEventFinal_STAGE3A_TEXT_4":"少女的眼神逐渐坚定。",
+      "FM_TokikoBarEventFinal_STAGE3A_TEXT_5":"\"我希望无论身份如何，都能贯彻自己的原则与信念。\"",
+      "FM_TokikoBarEventFinal_STAGE3A_TEXT_6":"\"那么接下来，让我们继续商谈与加入舰队相关的事项吧。\"",
+      "FM_TokikoBarEventFinal_STAGE3A_TEXT_7":"重新变为通常模式的少女微笑着表示可以重新回到谈判事项上。而被少女的一番宣言弄得大大疑惑和稍稍震撼的你在听到了这句话后也迅速回到了现实。",
+
+      "FM_TokikoBarEventFinal_STAGE3B_TEXT_0":"\"很有趣的回答哦，指挥官先生。\"",
+      "FM_TokikoBarEventFinal_STAGE3B_TEXT_1":"从少女的表情来看，她有些开心。",
+      "FM_TokikoBarEventFinal_STAGE3B_TEXT_2":"\"不是正面的回答，但是也给出了相当的信息，虽然这种摸棱两可有时会导致一些问题，不过它毫无疑问也是一个不错的答案。\"",
+      "FM_TokikoBarEventFinal_STAGE3B_TEXT_3":"\"但也正因为答案如此如此，如果没人对自己感兴趣的话，很多时候会有一种被遗忘感或者认同需求什么的...这种古怪的家伙真是让人头疼呢。\"",
+      "FM_TokikoBarEventFinal_STAGE3B_TEXT_4":"少女半开玩笑的发着牢骚，不过整体的气氛似乎仍然相当乐观且亲切。",
+      "FM_TokikoBarEventFinal_STAGE3B_TEXT_5":"\"不过幸好，最近的经历使我意识到，这个世界上总归是有些更加奇特的生物，会对这样有着古怪想法的人感兴趣。\"",
+      "FM_TokikoBarEventFinal_STAGE3B_TEXT_6":"\"于是，接下来就顺从我们共同的兴趣，来考虑一下指挥官先生的提议吧。\"",
+
+      "FM_TokikoBarEventFinal_STAGE3C_TEXT_0":"\"用疑问回答疑问并不是什么好习惯哦?\"",
+      "FM_TokikoBarEventFinal_STAGE3C_TEXT_1":"伴随着熟悉的，但又有些许不同，在放松之外带着一半认真的轻笑。少女继续说道:",
+      "FM_TokikoBarEventFinal_STAGE3C_TEXT_2":"\"突然问这种奇怪的问题倒也是我的坏习惯之一呢...\"",
+      "FM_TokikoBarEventFinal_STAGE3C_TEXT_3":"\"不过就算以最为功利的角度来说，人是绝对不会希望他人忘记自己的...\"",
+      "FM_TokikoBarEventFinal_STAGE3C_TEXT_4":"少女望向了星空。",
+      "FM_TokikoBarEventFinal_STAGE3C_TEXT_5":"\"更深层次的话，人总是会好奇自己到底是个怎样的东西吧?\"",
+      "FM_TokikoBarEventFinal_STAGE3C_TEXT_6":"\"我觉得这只靠自己一个人一定不可完全了解的。\"",
+      "FM_TokikoBarEventFinal_STAGE3C_TEXT_7":"你感觉到少女似乎进入了某种自我中心的状态，但就在这一想法进入脑海的一刻，少女已将目光重新放回了你的身上，面带微笑。",
+      "FM_TokikoBarEventFinal_STAGE3C_TEXT_8":"\"那么，电波时间到此结束，接下来，指挥官先生，我们来谈谈你先前的提案吧?\"",
+
+      "FM_TokikoBarEventFinal_STAGE3ABC_STAGE4":"\"在发言数量这个方面，你还真是和那些几句话就能把签订合同的家伙们完全不同啊\"",
+
+      "FM_TokikoBarEventFinal_STAGE4_TEXT_0":"\"那是当然，对我来说，能和有趣的人或是信任的人说话交谈,可是一种相当来之不易的财富哦?\"",
+      "FM_TokikoBarEventFinal_STAGE4_TEXT_1":"少女的回应相当耐人寻味，你从中感受到了一种混杂着消极与积极的奇怪态度。",
+      "FM_TokikoBarEventFinal_STAGE4_TEXT_2":"\"我并非人类，但是我对外界，对外界的寻常人，可是非常好奇哦? 毕竟说到底，书本或者数据库上的记录在某些时候还是比不过活生生的例子呢。\"",
+      "FM_TokikoBarEventFinal_STAGE4_TEXT_3":"情理之中的情报，不过在少女略带俏皮的语气之下，你还是对这稍稍加重的反差感有些不知所措。",
+      "FM_TokikoBarEventFinal_STAGE4_TEXT_4":"不过这似乎完全无所谓了，与你面对的少女在观察了你的反应之后所展露出的笑容，加上仍然如之前一样梦幻般的双翼，微妙的消除了暂时的异质感，让你迅速回到了正常的节奏。",
+      "FM_TokikoBarEventFinal_STAGE4_STAGE5":"\"不是人类的话，就是妖怪了吧?\"",
+
+      "FM_TokikoBarEventFinal_STAGE5_TEXT_0":"\"嘛，虽然概念上如此，不过说是妖怪，在这个时代总归是有着实体的生命，所以还是会像人类一样受伤。不过在身体素质上，与人类相比的话，仍然是有着些许优势呢。\"",
+      "FM_TokikoBarEventFinal_STAGE5_TEXT_1":"少女不慌不忙的向你解释着她的种族，尽管你实际上并没有去直接询问过这些信息，但是对方似乎相当乐意分享。",
+      "FM_TokikoBarEventFinal_STAGE5_TEXT_2":"\"总之大体上的信息就是这些，告诉你的原因是出于个人的兴趣，就是这样。\"",
+      "FM_TokikoBarEventFinal_STAGE5_TEXT_3":"接下来，少女方才那有些令人意外的兴奋神态又变回了先前的认真与更熟悉的冷静与克制。而你也终于抓住机会开始真正协商她的加入事项。",
+      "FM_TokikoBarEventFinal_STAGE5_TEXT_4":"一切终于回到了正轨。",
+      "FM_TokikoBarEventFinal_STAGE5_STAGE6":"继续",
+
+      "FM_TokikoBarEventFinal_STAGE6_TEXT_0":"和先前的对话相比，正常的协商反常的顺利，所取得结果甚至超出了你的预期: 少女非常爽快的答应了长期雇佣而不像那些高级雇佣兵一样只允许短期合同。",  
+      "FM_TokikoBarEventFinal_STAGE6_TEXT_1":"不过相应的，作为条件，合同条款上最终也根据少女的个人兴趣，加入了一些并无大碍的小要求，比如对于传统纸张和织物的微量供应。",  
+      "FM_TokikoBarEventFinal_STAGE6_TEXT_2":"但无论如何，这个古怪的故事，将暂告一段落了。",  
+      "FM_TokikoBarEventFinal_STAGE6_TEXT_3":"\"不过，对于新的故事，这似乎仅仅只是一个开始呢。\"",  
+      "FM_TokikoBarEventFinal_STAGE6_DONE":"结束",   
+
+    },
+
+    "condition":{
+      "FM_HazardRate":"{%s}危险等级",
+      "FM_PhantomFactory":"幻想科学"
+    },
+
+    "skill":{
+
+      "FM_ReimuSkillInfo0":"% 航速(在指挥驱逐舰和护卫舰时生效)",
+      "FM_ReimuSkillInfo1":"% 对巡洋舰级以上舰船的伤害(在指挥驱逐舰与护卫舰时生效)",
+      "FM_ReimuSkillInfo2":"% 所有类型舰船装甲与结构值",
+
+      "FM_TokikoSkillInfo0":"点部署点数(需要被分配到舰船上)",
+
+      #"FM_ShiledExpandSkillInfo":"为所有带有护盾的幻想工造军用舰船增加 +%s 的护盾角度(最大为 %s)",
+      "FM_ShiledExpandSkillInfo":"为所有带有护盾的战斗舰船增加 +%s 的护盾角度(最大为 %s)",
+      "FM_ShiledExpandSkillDes":"火蛇之盾",
+      #"FM_ShiledExpandSkillItemLable":"幻想工造军用舰船",
+      #"FM_ShiledExpandSkillItemTooltip":"当前所有舰队中幻想工造军用舰船的部署值",
+
+      "FM_PriceOfLifeInfo":"生命价值",
+      "FM_PriceOfLifeDes":"当处于势力雇佣状态下时，每月获得一份额外的工资",
+
+      "FM_FUMOSInfo0":"护盾展开速度与转向速度",
+      "FM_FUMOSInfo1":"护盾所受导弹与光束伤害",
+      "FM_FUMOSInfo2":"护盾受到数值大于{%s}的动能伤害时，将会把超出的伤害量变为原先的{%s}",
+
+      "FM_TheFlashInfo0":"舰船过载时耗散变为{%s}，主动排散速率提升{%s}",
+      "FM_TheFlashInfo1":"船体所受伤害",
+
+      "FM_WindOfGensokyoInfo0":"每艘巡洋舰或主力舰在进入战场后前{%s}秒的最高航速提升",
+      "FM_WindOfGensokyoInfo1":"巡洋舰最高航速+{%s}，主力舰最高航速+{%s}",
+      "FM_WindOfGensokyoStateTitle":"幻想风靡",
+      "FM_WindOfGensokyoStateData":"航速加成剩余时间 ",
+
+      "FM_SalvageCriticInfo":"提升{%s}的打捞总产出，但降低{%s}的非稀有打捞产出，对战后打捞和燃料打捞无影响",
+
+
+
+    },
+
+    "person":{
+      "FM_Reimu_Last":"Hakurei",
+      "FM_Reimu_First":"Reimu",
+      "FM_ReimuId":"Hakurei_Reimu",
+      "FM_TokikoId":"Tokiko",
+      "FM_KutakaId":"Kutaka",
+    },
+
+    # some other information maybe useful for translation (mainly Vanilla Weapons/Systems may appear in description.csv)
+    
+    # 瞬发 PD -> Brust PD Laser
+    # 相位长矛 -> Phase Lance
+    # 战术激光炮 -> Tactical Laser
+    # 引力子束 -> Graviton Beam 
+    # 星尘投射器 -> Stardust Caster
+    # 主动诱饵 -> Active Flare
+    # 反物质冲击波 -> Antimatter Blaster
+    # 赛博导弹 -> Sabot SRM
+    # 离子脉冲 -> Ion Pulser
+    # 烈焰驱动器 -> Burn Drive 
+    # 闪现 -> Phase Skimmer
+    
+
+
+}
