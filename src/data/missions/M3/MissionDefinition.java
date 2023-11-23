@@ -34,15 +34,15 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 
         // Set a small blurb for each fleet that shows up on the mission detail and
         // mission results screens to identify each side.
-        api.setFleetTagline(FleetSide.PLAYER, "Hinanawi Tenshi 的航母小组与卢德舰队残余");
-        api.setFleetTagline(FleetSide.ENEMY, "余辉，或者说恶魔的烤面包机");
+        api.setFleetTagline(FleetSide.PLAYER, "Hinanawi Tenshi's carrier squadron and remaining luddic fleet. ");
+        api.setFleetTagline(FleetSide.ENEMY, "Remnant, also known as devil's toaster.");
 
         // These show up as items in the bulleted list under
         // "Tactical Objectives" on the mission detail screen
-        api.addBriefingItem("尽可能多的撤离教会舰船，民用舰船的武装化改造是重要的");
-        api.addBriefingItem("与敌军正面对决是唯一的出路，但需要良好的组织协调");
-        api.addBriefingItem("撤退路线的前方已被敌方护卫舰和搭载轰炸机的航母封锁");
-        api.addBriefingItem("GMS Bhavaagra 和 GMS Lightning Fish 必须存活");
+        api.addBriefingItem("Try to retreat as many church ships as possible, it is important to make use of these civilian ship by militarizing their loadouts");
+        api.addBriefingItem("The only way out is to fight the enemy head on, however a good fleet coordination is needed");
+        api.addBriefingItem("Enemy frigate and carrier with bombers have blockaded the escape route");
+        api.addBriefingItem("GMS Bhavaagra and GMS Lightning Fish must survive");
 
         //set officers
         FactionAPI GM = Global.getSettings().createBaseFaction("fantasy_manufacturing");

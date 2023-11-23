@@ -4,7 +4,7 @@
 	"compressHullmods":false,
 	#"scope":ALL_CARRIERS,
 	"scope":CUSTOM,
-	"scopeStr":"All cruisers and battleships",
+	"scopeStr":"All Cruisers & Capital Ships",
 	#"scopeStr":"all ships with non-built-in fighter bays",
 	"effectGroups":[
 		{

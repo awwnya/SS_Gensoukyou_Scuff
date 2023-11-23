@@ -4,9 +4,9 @@
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/FM_Bazhiwu.png",
   "style": "FM",
-  "height": 128,
-  "width": 118,
-  "center": [59, 68.5],
+  "height": 116,
+  "width": 136,
+  "center": [68, 62.5],
   "collisionRadius": 94.5,
   "shieldCenter": [0, -0],
   "shieldRadius": 90.5,
@@ -23,7 +23,7 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,
-      "locations": [33, -0]
+      "locations": [30, 0]
     },
     {
       "id": "WS0002",
@@ -31,8 +31,8 @@
       "type": "SYSTEM",
       "mount": "HARDPOINT",
       "arc": 0,
-      "angle": 135,
-      "locations": [-4, 28]
+      "angle": -180,
+      "locations": [-12, 31]
     },
     {
       "id": "WS0003",
@@ -40,68 +40,126 @@
       "type": "SYSTEM",
       "mount": "HARDPOINT",
       "arc": 0,
-      "angle": -135,
-      "locations": [-4, -28]
+      "angle": 180,
+      "locations": [-12, -31]
     }
   ],
   "engineSlots": [
     {
-      "location": [-54, 0],
-      "length": 27,
-      "width": 7,
+      "location": [-19, 31.5],
+      "length": 8.5,
+      "width": 4,
       "angle": 180,
-      "contrailSize": 7,
+      "contrailSize": 4,
       "style": "HIGH_TECH"
     },
     {
-      "location": [-31, 15],
-      "length": 24.5,
-      "width": 7,
-      "angle": 180,
-      "contrailSize": 7,
-      "style": "HIGH_TECH"
-    },
-    {
-      "location": [-31, -15],
-      "length": 24.5,
-      "width": 7,
+      "location": [-19, -31.5],
+      "length": 8.5,
+      "width": 4,
       "angle": -180,
-      "contrailSize": 7,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-30, 24.5],
+      "length": 12.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-30, -24.5],
+      "length": 12.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-34, 20.5],
+      "length": 15,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-34, -20.5],
+      "length": 15,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-23.5, 28],
+      "length": 11.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-23.5, -28],
+      "length": 11.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-21.5, 30],
+      "length": 8.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-21.5, -30],
+      "length": 8.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, 22.5],
+      "length": 14.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, -22.5],
+      "length": 14.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
       "style": "HIGH_TECH"
     }
   ],
   "bounds": [
-    45, -8,
-    51.5, -11.5,
-    51.5, -18,
-    38.5, -18,
-    33.5, -24,
-    21.5, -29,
-    29, -38.5,
-    21, -47,
-    15, -43,
-    4, -54.5,
-    0, -44.5,
-    -16, -32.5,
-    -16, -21,
-    -28.5, -19.5,
-    -40, -9,
-    -53, -5,
-    -53, 5,
-    -40, 9,
-    -28.5, 19.5,
-    -16, 21,
-    -16, 32.5,
-    0, 44.5,
-    4, 54.5,
-    15, 43,
-    21, 47,
-    29, 38.5,
-    21.5, 29,
-    33.5, 24,
-    38.5, 18,
-    51.5, 18,
-    51.5, 11.5,
-    45, 8
+    38.5, -8.5,
+    29, -17,
+    29, -24,
+    24.5, -38,
+    3.5, -62.5,
+    -2, -46,
+    -17, -42.5,
+    -18, -32.5,
+    -53, -2,
+    -53, 2,
+    -18, 32.5,
+    -17, 42.5,
+    -2, 46,
+    3.5, 62.5,
+    24.5, 38,
+    29, 24,
+    29, 17,
+    38.5, 8.5
   ]
 }

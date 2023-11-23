@@ -10,6 +10,7 @@ import data.utils.FM_Misc;
 import data.utils.I18nUtil;
 import data.utils.visual.FM_ChainVisual;
 import org.lazywizard.lazylib.MathUtils;
+import org.lwjgl.input.Keyboard;
 
 import java.awt.*;
 import java.util.HashMap;
@@ -104,16 +105,21 @@ public class FantasyAliceMod extends BaseHullMod {
         tooltip.addSpacer(10f);
         //描述与评价
         tooltip.addSectionHeading(I18nUtil.getHullModString("FM_DescriptionAndEvaluation"), Alignment.TMID, 4f);
-        tooltip.addPara(
-                I18nUtil.getHullModString("FantasyAliceMod_DAE_0")
-                , Misc.getTextColor(), 4f);
-        tooltip.addSpacer(10f);
-        tooltip.addPara(I18nUtil.getHullModString("FantasyAliceMod_DAE_1"), Misc.getGrayColor(), 4f);
+        if (Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
+            tooltip.addPara (
+                    I18nUtil.getHullModString ( "FantasyAliceMod_DAE_0" )
+                    , Misc.getTextColor (), 4f );
+            tooltip.addSpacer ( 10f );
+            tooltip.addPara ( I18nUtil.getHullModString ( "FantasyAliceMod_DAE_1" ), Misc.getGrayColor (), 4f );
+        }
+        if (!Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
+            tooltip.addPara("Press and hold [%s] to view this information.", Float.valueOf(10.0f), Misc.getGrayColor(), Misc.getStoryBrightColor(), new String[]{"F1"}).setAlignment(Alignment.MID);
+        }
     }
 
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
-        if (index == 0) return "" + (int) EFFECT_RANGE;
-        if (index == 1) return "" + FIGHTER_TIME_MULT;
+        if (index == 0) return "" + FIGHTER_TIME_MULT + "x";
+        if (index == 1) return "" + (int) EFFECT_RANGE;
         if (index == 2) return I18nUtil.getHullModString("FantasyAliceMod_HL_2");
         return null;
     }

@@ -1,7 +1,7 @@
 {
   "variantId": "FM_Crow_drone",
   "hullId": "FM_Crow_drone",
-  "displayName": "无人机",
+  "displayName": "Drone Fighter",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

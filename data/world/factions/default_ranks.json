@@ -1,16 +1,16 @@
 {
 	"ranks":{
-		"FM_factionLeader":{"name":"理事长"},
-		"FM_cadetGraduate":{"name":"海军少尉候补生"},
-		"FM_miko":{"name":"巫女"},
+		"FM_factionLeader":{"name":"Chairperson"},
+		"FM_cadetGraduate":{"name":"Fleet Second Lieutenant Cadet"},
+		"FM_miko":{"name":"Miko"},
 		
 		
 	},
 	
 	"posts":{
-		"FM_factionLeader":{"name":"理事长"},
-		"FM_miko":{"name":"巫女"},
-		"FM_executiveAssistant":{"name":"行政助理"},
+		"FM_factionLeader":{"name":"Chairperson"},
+		"FM_miko":{"name":"Miko"},
+		"FM_executiveAssistant":{"name":"Executive"},
 	},
 }
 

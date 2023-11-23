@@ -1,7 +1,7 @@
 {
   "variantId": "FM_Halfghost",
   "hullId": "FM_Halfghost",
-  "displayName": "无人攻击机",
+  "displayName": "Drone Fighter",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

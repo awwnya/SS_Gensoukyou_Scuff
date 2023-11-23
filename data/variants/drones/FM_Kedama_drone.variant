@@ -1,7 +1,7 @@
 {
   "variantId": "FM_Kedama_drone",
   "hullId": "FM_Kedama_drone",
-  "displayName": "支援无人机",
+  "displayName": "Support Drone",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

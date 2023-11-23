@@ -3,7 +3,7 @@
 	"governingAptitude":"FM_SkillAptitude",
 	"compressHullmods":false,
 	"scope":CUSTOM,
-	"scopeStr":"Employment Income",
+	"scopeStr":"Incomes",
 	"effectGroups":[
 		{
 			"requiredSkillLevel":1,

@@ -19,14 +19,14 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 
         // Set a small blurb for each fleet that shows up on the mission detail and
         // mission results screens to identify each side.
-        api.setFleetTagline(FleetSide.PLAYER, "给天邪鬼的小礼物");
-        api.setFleetTagline(FleetSide.ENEMY, "给天邪鬼的大惊喜");
+        api.setFleetTagline(FleetSide.PLAYER, "Small Gift for Amanojaku");
+        api.setFleetTagline(FleetSide.ENEMY, "Big Surprise for Amanojaku");
 
         // These show up as items in the bulleted list under
         // "Tactical Objectives" on the mission detail screen
-        api.addBriefingItem("留的青山在...");
-        api.addBriefingItem("我要看到血流成河！");
-        api.addBriefingItem("在联合打击之下你的舰船撑不了多久");
+        api.addBriefingItem("Fight for another days...");
+        api.addBriefingItem("Let the blood rain!");
+        api.addBriefingItem("Your ship wont last long against coordinated attack.");
 
         // Set up the player's fleet.  Variant names come from the
         // files in data/variants and data/variants/fighters

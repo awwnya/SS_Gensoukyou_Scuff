@@ -4,7 +4,7 @@
 	"compressHullmods":false,
 	"elite":false,
 	"scope":"CUSTOM",
-	"scopeStr":"All ships in the fleet with deployment points greater than or equal to 5",
+	"scopeStr":"All ships in the fleet with 5 or more deployment points",
 	"effectGroups":[
 		{
 			"requiredSkillLevel":1,

@@ -1,13 +1,13 @@
 {
 
     "designTypeColors":{
-    "幻想工造":[219,40,40,255],
-		"幻想计划":[219,40,40,255],
-    "幻想工造-不朽之月":[0,90,204,255],
-    "幻想工造-风神信仰":[50,246,209,255],
-    "幻想工造-未知星船":[158,54,255,255],
-    "幻想工造-地狱阳炎":[255,6,104,255],
-    "幻想工造-死灵夜樱":[255,162,227,255],
+    "Gensoukyou Manufacture":[219,40,40,255],
+		"Gensoukyou Project":[219,40,40,255],
+    "Gensoukyou Project - Luna Night":[0,90,204,255],
+    "Gensoukyou Project - Mountain of Faith":[50,246,209,255],
+    "Gensoukyou Project - Undefined Fantastic Object":[158,54,255,255],
+    "Gensoukyou Project - Subterranean Animism":[255,6,104,255],
+    "Gensoukyou Project - Night Sakura of Dead Spirits":[255,162,227,255],
     },
     "graphics":{
     
@@ -36,6 +36,8 @@
           "FM_StreamFx2":"graphics/fx/FM_StreamFx2.png",
 
           "FM_MikoEffect":"graphics/ships/FM_Miko/FM_MikoEffect.png",
+          "FM_BazhiwuSystemVisual_00":"graphics/ships/deco/FM_BazhiwuSystemVisual_00.png",
+          "FM_BazhiwuSystemVisual_01":"graphics/ships/deco/FM_BazhiwuSystemVisual_01.png",
 
           "FM_MomiziEffect_Test":"graphics/fx/FM_MomiziEffect_S.png",
         },

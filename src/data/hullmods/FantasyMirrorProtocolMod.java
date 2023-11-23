@@ -10,6 +10,7 @@ import com.fs.starfarer.api.util.Misc;
 import data.utils.FM_Colors;
 import data.utils.FM_Misc;
 import data.utils.I18nUtil;
+import org.lwjgl.input.Keyboard;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicIncompatibleHullmods;
 
@@ -67,9 +68,15 @@ public class FantasyMirrorProtocolMod extends BaseHullMod {
 
         //描述与评价
         tooltip.addSectionHeading(I18nUtil.getHullModString("FM_DescriptionAndEvaluation"), Alignment.TMID, 4f);
+        if (Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
         tooltip.addPara(I18nUtil.getHullModString("FantasyMirrorProtocolMod_DAE_0"), Misc.getTextColor(), 4f);
         tooltip.addSpacer(10f);
         tooltip.addPara(I18nUtil.getHullModString("FantasyMirrorProtocolMod_DAE_1"), Misc.getGrayColor(), 4f);
+    }
+        if (!Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
+        tooltip.addPara("Press and hold [%s] to view this information.", Float.valueOf(10.0f), Misc.getGrayColor(), Misc.getStoryBrightColor(), new String[]{"F1"}).setAlignment(Alignment.MID);
+    }
+        tooltip.addPara(I18nUtil.getHullModString("FantasyMirrorProtocolMod_DAE_2"), Misc.getNegativeHighlightColor(), 4f);
     }
 
 

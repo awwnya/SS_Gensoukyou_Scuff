@@ -1,7 +1,7 @@
 {
   "variantId": "FM_Fairy_rocket",
   "hullId": "FM_Fairy_rocket",
-  "displayName": "火箭轰炸机",
+  "displayName": "Rocket Bomber",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

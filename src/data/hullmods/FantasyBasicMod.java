@@ -10,6 +10,7 @@ import data.utils.I18nUtil;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicIncompatibleHullmods;
+import org.lwjgl.input.Keyboard;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -108,10 +109,13 @@ public class FantasyBasicMod extends BaseHullMod {
             if (currState.get(ship).effect) {
                 Global.getCombatEngine().maintainStatusForPlayerShip(INFO4, Global.getSettings().getSpriteName("ui", "icon_kinetic"), I18nUtil.getHullModString("FantasyBasicMod_Combat_0_T"), I18nUtil.getHullModString("FantasyBasicMod_Combat_0_D") + Misc.getRoundedValueMaxOneAfterDecimal(currState.get(ship).timer), false);
             } else {
-                Global.getCombatEngine().maintainStatusForPlayerShip(INFO3, Global.getSettings().getSpriteName("ui", "icon_kinetic"), I18nUtil.getHullModString("FantasyBasicMod_Combat_1_T"), I18nUtil.getHullModString("FantasyBasicMod_Combat_1_D") + Misc.getRoundedValueMaxOneAfterDecimal(currState.get(ship).cd), true);
+                if (currState.get(ship).cd >= 0.1f) {
+                    Global.getCombatEngine ().maintainStatusForPlayerShip ( INFO3, Global.getSettings ().getSpriteName ( "ui", "icon_kinetic" ), I18nUtil.getHullModString ( "FantasyBasicMod_Combat_1_T" ), I18nUtil.getHullModString ( "FantasyBasicMod_Combat_1_D" ) + Misc.getRoundedValueMaxOneAfterDecimal ( currState.get ( ship ).cd ), true );
+                }
             }
-
-            Global.getCombatEngine().maintainStatusForPlayerShip(INFO2, Global.getSettings().getSpriteName("ui", "icon_kinetic"), I18nUtil.getHullModString("FantasyBasicMod_Combat_2_T"), I18nUtil.getHullModString("FantasyBasicMod_Combat_2_D") + BULLET_NUMBER, false);
+            if (currState.get(ship).cd <= 0f & !currState.get(ship).effect) {
+                Global.getCombatEngine ().maintainStatusForPlayerShip ( INFO2, Global.getSettings ().getSpriteName ( "ui", "icon_kinetic" ), I18nUtil.getHullModString ( "FantasyBasicMod_Combat_2_T" ), I18nUtil.getHullModString ( "FantasyBasicMod_Combat_2_D" ) + BULLET_NUMBER, false );
+            }
         }
 
 
@@ -193,34 +197,37 @@ public class FantasyBasicMod extends BaseHullMod {
         //说明
         tooltip.addSectionHeading(I18nUtil.getHullModString("FM_Instruction"), Alignment.TMID, 4f);
         tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_I_0"), Misc.getHighlightColor(), 4f);
-        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_I_1"), Misc.getTextColor(), 4f);
-        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_I_2"), Misc.getGrayColor(), 4f);
+        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_I_1"), 4f, Misc.getTextColor(), Misc.getHighlightColor(),
+                "2%",
+                "25%"
+        );
         tooltip.addSpacer(10f);
-        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_I_3"), Misc.getTextColor(), 4f);
-
         tooltip.addSectionHeading(I18nUtil.getHullModString("FantasyBasicMod_SP"), Alignment.TMID, 4f);
         tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_SP_0"), 4f, Misc.getTextColor(), Misc.getHighlightColor(),
-                String.valueOf(BULLET_NUMBER_REQUIREMENT_FOR_EFFECT),
-                (int) SPEED_AND_OTHER_BONUS + "%",
-                String.valueOf((int) EFFECT_TIME)
-        );
-        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_SP_1"), 4f, Misc.getTextColor(), Misc.getHighlightColor(),
-                String.valueOf((int) CD_TIME));
-        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_SP_2"), Misc.getTextColor(), 4f);
-        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_SP_3"), 4f, Misc.getHighlightColor(),
                 String.valueOf(magRANGE.get(ShipAPI.HullSize.FRIGATE).intValue()),
                 String.valueOf(magRANGE.get(ShipAPI.HullSize.DESTROYER).intValue()),
                 String.valueOf(magRANGE.get(ShipAPI.HullSize.CRUISER).intValue()),
-                String.valueOf(magRANGE.get(ShipAPI.HullSize.CAPITAL_SHIP).intValue())
+                String.valueOf(magRANGE.get(ShipAPI.HullSize.CAPITAL_SHIP).intValue()),
+                String.valueOf(BULLET_NUMBER_REQUIREMENT_FOR_EFFECT),
+                (int) SPEED_AND_OTHER_BONUS + "%",
+                String.valueOf((int) EFFECT_TIME),
+                String.valueOf((int) CD_TIME)
         );
         tooltip.addSpacer(10f);
         //描述与评价
         tooltip.addSectionHeading(I18nUtil.getHullModString("FM_DescriptionAndEvaluation"), Alignment.TMID, 4f);
-        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_DAE_0"), Misc.getTextColor(), 4f);
+        if (Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
+            tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_DAE_0"), Misc.getTextColor(), 4f);
+            tooltip.addSpacer(10f);
+            tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_DAE_1"), Misc.getGrayColor(), 4f);
+            tooltip.addSpacer(10f);
+            tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_DAE_2"), Misc.getGrayColor(), 4f);
+        }
+        if (!Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
+            tooltip.addPara("Press and hold [%s] to view this information.", Float.valueOf(10.0f), Misc.getGrayColor(), Misc.getStoryBrightColor(), new String[]{"F1"}).setAlignment(Alignment.MID);
+        }
         tooltip.addSpacer(10f);
-        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_DAE_1"), Misc.getGrayColor(), 4f);
-        tooltip.addSpacer(10f);
-        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_DAE_2"), Misc.getGrayColor(), 4f);
+        tooltip.addPara(I18nUtil.getHullModString("FantasyBasicMod_SP_1"), Misc.getNegativeHighlightColor(), 4f);
     }
 
 

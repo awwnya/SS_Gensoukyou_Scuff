@@ -9,6 +9,7 @@ import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 import data.utils.I18nUtil;
+import org.lwjgl.input.Keyboard;
 import org.magiclib.util.MagicIncompatibleHullmods;
 
 import java.awt.*;
@@ -189,16 +190,26 @@ public class FantasyTraditionalMod extends BaseHullMod {
                 String.valueOf((int) RANGE_CEIL), String.valueOf(OUT_OF_RANGE));
         //限制与其他功能说明
         tooltip.addSectionHeading(I18nUtil.getHullModString("FantasyTraditionalMod_SP"), Alignment.TMID, 4f);
+        if (Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
         tooltip.addPara(I18nUtil.getHullModString("FantasyTraditionalMod_SP_0"), Misc.getTextColor(), 4f);
         tooltip.addPara(I18nUtil.getHullModString("FantasyTraditionalMod_SP_1"), Misc.getTextColor(), 4f);
         tooltip.addPara(I18nUtil.getHullModString("FantasyTraditionalMod_SP_2"), Misc.getGrayColor(), 4f);
         tooltip.addSpacer(10f);
+    }
+        if (!Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
+        tooltip.addPara("Press and hold [%s] to view this information.", Float.valueOf(10.0f), Misc.getGrayColor(), Misc.getStoryBrightColor(), new String[]{"F1"}).setAlignment(Alignment.MID);
+    }
         //描述与评价
         tooltip.addSectionHeading(I18nUtil.getHullModString("FM_DescriptionAndEvaluation"), Alignment.TMID, 4f);
+        if (Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
         tooltip.addPara(I18nUtil.getHullModString("FantasyTraditionalMod_DAE_0")
                 , Misc.getTextColor(), 4f);
         tooltip.addSpacer(10f);
         tooltip.addPara(I18nUtil.getHullModString("FantasyTraditionalMod_DAE_1"), Misc.getGrayColor(), 4f);
+    }
+        if (!Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
+        tooltip.addPara("Press and hold [%s] to view this information.", Float.valueOf(10.0f), Misc.getGrayColor(), Misc.getStoryBrightColor(), new String[]{"F1"}).setAlignment(Alignment.MID);
+    }
     }
 
     @Override

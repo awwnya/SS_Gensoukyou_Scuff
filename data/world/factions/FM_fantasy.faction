@@ -10,10 +10,10 @@
 	"brightUIColor":[244,226,226,200],
 	"secondarySegments":2,
 
-	"displayName":"幻想工造",
-	"displayNameWithArticle":"幻想工造",
-	"displayNameLong":"幻想工造",
-	"displayNameLongWithArticle":"幻想工造",
+	"displayName":"Gensoukyou Manufacture",
+	"displayNameWithArticle":"the Gensoukyou Manufacture",
+	"displayNameLong":"Gensoukyou Manufacturing",
+	"displayNameLongWithArticle":"the Gensoukyou Manufacturing",
 	"logo":"graphics/factions/FM_flag.png",
 	"crest":"graphics/factions/FM_crest.png",
 	
@@ -136,7 +136,7 @@
 		"combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
 		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
 		"combatFreighterCombatUseFractionWhenPriority":0.33,# as part of normal combat lineup, when marked as priority ship
-		"autofitRandomizeProbability":0,
+		"autofitRandomizeProbability":0.33,
 
 		"commanderSkillsShuffleProbability":1,
 		"commanderSkills":[
@@ -188,14 +188,14 @@
 
 	"ranks":{
 		"ranks":{
-			"spaceCommander":{"name":"空间指挥官"},
-			"factionLeader":{"name":"人类代理者"},
+			"spaceCommander":{"name":"Space Commander"},
+			"factionLeader":{"name":"Human Representative"},
 		},
 		"posts":{
-			"factionLeader":{"name":"人类代理者"},
-			"patrolCommander":{"name":"结界监视员"},
-			"fleetCommander":{"name":"异变调查官"},
-			"baseCommander":{"name":"结点管理者"},
+			"factionLeader":{"name":"Human Representative"},
+			"patrolCommander":{"name":"Boundary Observer"},
+			"fleetCommander":{"name":"Anomaly Inspector"},
+			"baseCommander":{"name":"Nexus Manager"},
 		},
 	},
 	"voices":{
@@ -231,19 +231,19 @@
 		},
 	},	
 	"fleetTypeNames":{
-		"trade":"贸易舰队",
-		"tradeLiner":"旅行舰队",
-		"tradeSmuggler":"运输舰队",
-		"smallTrader":"联系舰队",
+		"trade":"Trade Fleet",
+		"tradeLiner":"Travel Fleet",
+		"tradeSmuggler":"Transport Fleet",
+		"smallTrader":"Communication Fleet",
 
-		"patrolSmall":"结界哨兵",
-		"patrolMedium":"结界监察组",
-		"patrolLarge":"结界维护组",
+		"patrolSmall":"Boundary Sentry",
+		"patrolMedium":"Boundary Overseer",
+		"patrolLarge":"Boundary Protector",
 
-		"inspectionFleet":"QA 巡视员",
-		"taskForce":"异变事务小组",
+		"inspectionFleet":"QA Inspector",
+		"taskForce":"Anomaly Task Team",
 
-		"foodReliefFleet":"救援舰队",
+		"foodReliefFleet":"Relief Fleet",
 
 		#"mercScout":"雇佣侦查队",
 		#"mercBountyHunter":"人性复苏 雇佣军",

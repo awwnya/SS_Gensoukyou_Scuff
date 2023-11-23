@@ -52,5 +52,5 @@
     PROJECTILE_NO_FF,
     PROJECTILE_FIGHTER
   ],
-  "fireSoundOne": "heavy_burst_laser_fire"
+  "fireSoundOne": "FM_Ad_fire"
 }

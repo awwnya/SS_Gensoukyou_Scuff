@@ -4,8 +4,8 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.listeners.DamageDealtModifier;
 import com.fs.starfarer.api.graphics.SpriteAPI;
-import com.fs.starfarer.api.loading.DamagingExplosionSpec;
-import com.fs.starfarer.api.loading.ProjectileSpawnType;
+//import com.fs.starfarer.api.loading.DamagingExplosionSpec;
+//import com.fs.starfarer.api.loading.ProjectileSpawnType;
 import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
@@ -17,6 +17,7 @@ import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicRender;
+import org.lwjgl.input.Keyboard;
 
 import java.awt.*;
 import java.util.HashMap;
@@ -133,9 +134,14 @@ public class FantasyAmuletMod extends BaseHullMod {
     public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
         tooltip.addSpacer(10f);
         tooltip.addSectionHeading(I18nUtil.getHullModString("FM_DescriptionAndEvaluation"), Alignment.TMID, 4f);
+        if (Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
         tooltip.addPara(I18nUtil.getHullModString("FantasyAmulet_DAE_0"), Misc.getTextColor(), 4f);
         tooltip.addSpacer(10f);
         tooltip.addPara(I18nUtil.getHullModString("FantasyAmulet_DAE_1"), Misc.getGrayColor(), 4f);
+        }
+        if (!Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
+            tooltip.addPara("Press and hold [%s] to view this information.", Float.valueOf(10.0f), Misc.getGrayColor(), Misc.getStoryBrightColor(), new String[]{"F1"}).setAlignment(Alignment.MID);
+        }
     }
 
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {

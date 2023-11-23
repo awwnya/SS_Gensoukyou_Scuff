@@ -19,14 +19,14 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 
         // Set a small blurb for each fleet that shows up on the mission detail and
         // mission results screens to identify each side.
-        api.setFleetTagline(FleetSide.PLAYER, "\"这只是个试探对吧\"");
-        api.setFleetTagline(FleetSide.ENEMY, "异变处理小组");
+        api.setFleetTagline(FleetSide.PLAYER, "\"This is just a test right?\"");
+        api.setFleetTagline(FleetSide.ENEMY, "Anomaly Investigation Team");
 
         // These show up as items in the bulleted list under
         // "Tactical Objectives" on the mission detail screen
-        api.addBriefingItem("最好打一个漂亮仗");
-        api.addBriefingItem("利用武器优势");
-        api.addBriefingItem("存活下来是最重要的");
+        api.addBriefingItem("Better fight a beautiful battle");
+        api.addBriefingItem("Take advantages of your weaponries");
+        api.addBriefingItem("Survival is the most important");
 
         // Set up the player's fleet.  Variant names come from the
         // files in data/variants and data/variants/fighters

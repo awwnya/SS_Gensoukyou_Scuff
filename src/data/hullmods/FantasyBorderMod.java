@@ -143,7 +143,7 @@ public class FantasyBorderMod extends BaseHullMod {
 
             if (ship == engine.getPlayerShip()) {
                 engine.maintainStatusForPlayerShip(INFO2, Global.getSettings().getSpriteName("ui", "icon_energy"), I18nUtil.getHullModString("FantasyBorderMod_Combat_0_T"), I18nUtil.getHullModString("FantasyBorderMod_Combat_0_D") +
-                        currState.get(ship).num, false);
+                                                                                                                                                                             currState.get(ship).num, false);
                 engine.maintainStatusForPlayerShip(INFO1, Global.getSettings().getSpriteName("ui", "icon_energy"), I18nUtil.getHullModString("FantasyBorderMod_Combat_1_T"),
                         (int) (magDAMAGE.get(ship.getHullSize()) - currState.get(ship).damageRe) + I18nUtil.getHullModString("FantasyBorderMod_Combat_1_D"), false);
             }
@@ -170,11 +170,11 @@ public class FantasyBorderMod extends BaseHullMod {
         if (index == 0) return "" + (int) (FLUX_LEVEL * 100) + "%";
         if (index == 1) return "" + (int) EFFECT_TIME;
         if (index == 2) return "" + NUM_OF_BOMBS;
-        if (index == 3) return String.valueOf(magDAMAGE.get(ShipAPI.HullSize.FRIGATE).intValue());
-        if (index == 4) return String.valueOf(magDAMAGE.get(ShipAPI.HullSize.DESTROYER).intValue());
-        if (index == 5) return String.valueOf(magDAMAGE.get(ShipAPI.HullSize.CRUISER).intValue());
-        if (index == 6) return String.valueOf(magDAMAGE.get(ShipAPI.HullSize.CAPITAL_SHIP).intValue());
-        if (index == 7) return "" + UPPER_BOUND;
+        if (index == 3) return "" + UPPER_BOUND;
+        if (index == 4) return String.valueOf(magDAMAGE.get(ShipAPI.HullSize.FRIGATE).intValue());
+        if (index == 5) return String.valueOf(magDAMAGE.get(ShipAPI.HullSize.DESTROYER).intValue());
+        if (index == 6) return String.valueOf(magDAMAGE.get(ShipAPI.HullSize.CRUISER).intValue());
+        if (index == 7) return String.valueOf(magDAMAGE.get(ShipAPI.HullSize.CAPITAL_SHIP).intValue());
         if (index == 8) return "" + (int) (100 * SHIELD_DAMAGE_WEIGHT) + "%";
         return null;
     }

@@ -20,8 +20,8 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 
         // Set a small blurb for each fleet that shows up on the mission detail and
         // mission results screens to identify each side.
-        api.setFleetTagline(FleetSide.PLAYER, "测试用舰艇");
-        api.setFleetTagline(FleetSide.ENEMY, "群众演员");
+        api.setFleetTagline(FleetSide.PLAYER, "Test Fleets");
+        api.setFleetTagline(FleetSide.ENEMY, "Fake Paid Actor");
 
         // These show up as items in the bulleted list under
         // "Tactical Objectives" on the mission detail screen

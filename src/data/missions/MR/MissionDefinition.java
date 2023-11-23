@@ -190,8 +190,8 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 
             // Set a small blurb for each fleet that shows up on the mission detail and
             // mission results screens to identify each side.
-            api.setFleetTagline(FleetSide.PLAYER, "幻想工造模拟舰队" + " || " + maxDP);
-            api.setFleetTagline(FleetSide.ENEMY, "测试敌舰" + " || " + maxDP);
+            api.setFleetTagline(FleetSide.PLAYER, "Gensoukyou Manufacture Simulation Fleet" + " || " + maxDP);
+            api.setFleetTagline(FleetSide.ENEMY, "Simulation Enemy Fleet" + " || " + maxDP);
 
             // Set up the fleets
             generateFleet(maxDP, FleetSide.PLAYER, FM_ships, api);
@@ -200,8 +200,8 @@ public class MissionDefinition implements MissionDefinitionPlugin {
             api.initFleet(FleetSide.PLAYER, "TEST", FleetGoal.ATTACK, false, 5);
             api.initFleet(FleetSide.ENEMY, "GMS", FleetGoal.ATTACK, true, 5);
 
-            api.setFleetTagline(FleetSide.PLAYER, "星域模拟舰队" + " || " + maxDP);
-            api.setFleetTagline(FleetSide.ENEMY, "幻想工造敌舰" + " || " + maxDP);
+            api.setFleetTagline(FleetSide.PLAYER, "Sector Simulation Fleet" + " || " + maxDP);
+            api.setFleetTagline(FleetSide.ENEMY, "Simulated Gensoukyou Manufacture Enemy Fleet" + " || " + maxDP);
 
             generateFleet(maxDP, FleetSide.PLAYER, ships, api);
             generateFleet(maxDP, FleetSide.ENEMY, FM_ships, api);
@@ -210,9 +210,9 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 
         // These show up as items in the bulleted list under
         // "Tactical Objectives" on the mission detail screen
-        api.addBriefingItem("击败敌军");
-        api.addBriefingItem("按住数字 1 或数字 2 的同时单击战役能够调整双方规模，1 为增加部署 2 为降低部署");
-        api.addBriefingItem("按住数字 3 的同时单击战役能够对调阵营");
+        api.addBriefingItem("Defeat Enemy");
+        api.addBriefingItem("Clicking mission while holding number 1 or number 2 will increase size of each side. 1 increase deployment, 2 decrease deployment");
+        api.addBriefingItem("Press 3 while clicking the mission to switch factions");
 
         // Set up the map.
         float width = 24000f;

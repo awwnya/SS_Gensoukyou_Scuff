@@ -10,6 +10,7 @@ import data.utils.FM_ProjectEffect;
 import data.utils.I18nUtil;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.AIUtils;
+import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.plugins.MagicTrailPlugin;
@@ -286,9 +287,15 @@ public class FantasyKawausoMod extends BaseHullMod {
         tooltip.addSpacer(10f);
         //描述与评价
         tooltip.addSectionHeading(I18nUtil.getHullModString("FM_DescriptionAndEvaluation"), Alignment.TMID, 4f);
+        if (Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
         tooltip.addPara(I18nUtil.getHullModString("FantasyKawausoMod_DAE_0"), Misc.getTextColor(), 4f);
         tooltip.addSpacer(10f);
         tooltip.addPara(I18nUtil.getHullModString("FantasyKawausoMod_DAE_1"), Misc.getGrayColor(), 4f);
+    }
+        if (!Keyboard.isKeyDown(Keyboard.getKeyIndex("F1"))) {
+        tooltip.addPara("Press and hold [%s] to view this information.", Float.valueOf(10.0f), Misc.getGrayColor(), Misc.getStoryBrightColor(), new String[]{"F1"}).setAlignment(Alignment.MID);
+    }
+        tooltip.addPara(I18nUtil.getHullModString("FantasyKawausoMod_DAE_2"), Misc.getNegativeHighlightColor(), 4f);
 
     }
 

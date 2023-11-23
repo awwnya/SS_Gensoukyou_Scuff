@@ -1,4 +1,4 @@
-地点：未知
-日期：未知
+Location: Unknown
+Date: Unknown
 
-仅仅是为了提高人员素质而设置的综合模拟战系统，我们准备了幻想工造本身的舰船系列与星域中常见的舰船，并附带的各种微调系统...
+A comprehensive simulated combat system designed solely to enhance personnel skills. We have prepared a series of Gensoukyou-made ships along with common ships found in the starsector, complemented by various fine-tuned systems...

@@ -155,6 +155,9 @@
 	"FM_Leaf_fire":[
 		{"file":"sounds/se/energy_medium/FM_Leaf_fire.ogg","pitch":2,"volume":1.0},
 	],
+	"FM_Ad_fire":[
+		{"file":"sounds/se/energy_medium/FM_Ad_fire.ogg","pitch":1,"volume":2},
+	],
 
 
 	#energy_small

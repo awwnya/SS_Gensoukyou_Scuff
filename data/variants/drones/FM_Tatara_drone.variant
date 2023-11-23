@@ -1,7 +1,7 @@
 {
   "variantId": "FM_Tatara_drone",
   "hullId": "FM_Tatara_drone",
-  "displayName": "防御无人机",
+  "displayName": "Defense Drone",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

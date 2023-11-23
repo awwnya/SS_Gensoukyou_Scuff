@@ -5,12 +5,12 @@
     "FantasyBasicMod"
   ],
   "descriptionId": "buffalo",
-  "descriptionPrefix": "这艘船由幻想工造进行了适应性改造，以应对日益复杂的星域环境",
+  "descriptionPrefix": "The ship has been adapted by Gensoukyou Manufacture to respond to the increasing demands in Persean Sector.",
   "fighterBays": 0,
   "fpMod": 0,
-  "hullDesignation": "货舰",
-  "hullName": "水牛 (FM)",
-  "manufacturer": "幻想工造",
+  "hullDesignation": "Freighter",
+  "hullName": "Buffalo (GM)",
+  "manufacturer": "Gensoukyou Manufacture",
   "removeBuiltInMods": [
     "degraded_engines"
   ],
@@ -18,7 +18,7 @@
   "restoreToBaseHull": false,
   "skinHullId": "buffalo_FM",
   "spriteName": "graphics/ships/skins/buffalo_FM.png",
-  "tech": "幻想计划",
+  "tech": "Gensoukyou Project",
   "weaponSlotChanges": {
     "WS 001": {
       "type": "ENERGY"

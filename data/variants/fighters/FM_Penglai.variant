@@ -1,7 +1,7 @@
 {
   "variantId": "FM_Penglai",
   "hullId": "FM_Penglai",
-  "displayName": "无人支援战斗机",
+  "displayName": "Support Drone",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

@@ -5,7 +5,8 @@
 	"aiType":"WEAPON_BOOST",
 
 	"statsScript":"data.shipsystems.FM_reactorexcursion",
-
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	
 	"weaponGlowColor":[217,55,55,200],
 	"weaponTypes":[ENERGY],
 

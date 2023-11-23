@@ -1,7 +1,7 @@
 {
   "variantId": "FM_Fairy_bomb",
   "hullId": "FM_Fairy_bomb",
-  "displayName": "轻型轰炸机",
+  "displayName": "Light Bomber",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

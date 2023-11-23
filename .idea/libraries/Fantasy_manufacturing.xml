@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Fantasy_manufacturing">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jars/Fantasy_manufacturing.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

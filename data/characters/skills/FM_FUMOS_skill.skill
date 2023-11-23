@@ -15,7 +15,7 @@
 			]
 		},
 		{
-			"name":"Elitist",
+			"name":"Elites",
 			"requiredSkillLevel":2,
 			"effectBasedOnLevel":false,
 			"effects":[

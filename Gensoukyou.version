@@ -1,0 +1,12 @@
+{
+	"masterVersionFile":"https://raw.githubusercontent.com/Yumeris/Gensoukyou_Translation/master/Gensoukyou.version",
+	"modName":"Gensoukyou Manufacture",
+	"modThreadId":0,
+	"modVersion":
+	{
+		"major":0,
+		"minor":8,
+		"patch":1_rc1_t7,
+	},
+	"starsectorVersion":"0.96a-RC10",
+}
